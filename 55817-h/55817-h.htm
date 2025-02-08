@@ -1,0 +1,2905 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>
+      The Project Gutenberg eBook of Automata Old and New, by Conrad William Cooke.
+    </title>
+    <link rel="coverpage" href="images/cover.jpg" />
+    <style type="text/css">
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.covernote {visibility: hidden; display: none;}
+div.chapter {page-break-before: always;}
+
+h1,h2 { text-align: center; clear: both; }
+h1 {page-break-before: always; }
+h2 {page-break-before: avoid;}
+
+p { margin-top: .51em; text-align: justify; text-indent: 1.5em; margin-bottom: .49em; }
+p.no-indent  { margin-top: .51em; text-align: justify; text-indent: 0em; margin-bottom: .49em;}
+p.neg-indent { margin-top: .51em; text-align: justify; text-indent: -3em; margin-bottom: .49em; padding-left: 3em;}
+p.neg-indent_big { margin-top: .51em; text-align: justify; text-indent: -12em; margin-bottom: .49em; padding-left: 12em;}
+p.author    { margin-top: 1em; margin-right: 5%; text-align: right;}
+p.indent    { text-indent: 1.5em;}
+p.f90       { font-size: 90%;  text-align: center; text-indent: 0em; }
+p.f110      { font-size: 110%; text-align: center; text-indent: 0em; }
+p.f120      { font-size: 120%; text-align: center; text-indent: 0em; }
+p.f150      { font-size: 150%; text-align: center; text-indent: 0em; }
+p.f200      { font-size: 200%; text-align: center; text-indent: 0em; }
+
+.space-above1 { margin-top: 1em; }
+.space-above2 { margin-top: 2em; }
+.space-above3 { margin-top: 3em; }
+
+.space-below2 { margin-bottom: 2em; }
+.space-below3 { margin-bottom: 3em; }
+
+hr.r5     {width: 5%; margin-top: 1em; margin-bottom: 1em;
+                      margin-left: 47.5%; margin-right: 47.5%; }
+hr.r25  {width: 25%; margin-top: 3em; margin-bottom: 3em;
+                     margin-left: 37.5%; margin-right: 37.5%; }
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%; }
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%; }
+
+.pagenum {
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: smaller;
+    text-align: right;
+}
+
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 90%;
+}
+
+.bbox     {border: solid 2px;}
+
+.center   {text-align: center; text-indent: 0; }
+.smcap    {font-variant: small-caps;}
+.u        {text-decoration: underline;}
+
+img {max-width: 100%; height: auto;}
+
+.figcenter   {
+    margin: auto;
+    text-align: center;
+}
+
+.figleft {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.footnotes        {border: dashed 1px;}
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+.poetry-container { text-align: center; }
+.poem { margin-left:10%; margin-right:10%;
+        display: inline-block; text-align: left; }
+.poem .stanza {margin: 1em 0em 1em 0em;}
+.poem span.i0     {display: block; margin-left: 0em;   padding-left: 3em; text-indent: -3em;}
+.poem span.i1     {display: block; margin-left: 0.5em; padding-left: 3em; text-indent: -3em;}
+
+.transnote {background-color: #E6E6FA;
+    color: black;
+     font-size:smaller;
+     padding:0.5em;
+     margin-bottom:5em;
+     font-family:sans-serif, serif; }
+
+.ws6   {display: inline; margin-left: 0em; padding-left:  6em;}
+.ws10  {display: inline; margin-left: 0em; padding-left: 10em;}
+
+@media screen, print
+{
+ img.drop-cap
+    { float: left;
+      margin: 0 0.5em 0 0;
+    }
+  p.drop-cap:first-letter
+  { color: transparent;
+    visibility: hidden;
+    margin-left: -0.9em;
+  }
+}
+
+ @media handheld { .pagenum   {display:none;}
+                   .covernote {visibility: visible; display: block;}
+ img.drop-cap
+    { display: none; }
+ p.drop-cap:first-letter
+    { color: inherit;
+      visibility: visible;
+      margin-left: 0;
+    }
+}
+
+    </style>
+  </head>
+<body>
+
+
+<pre>
+
+The Project Gutenberg EBook of Automata Old and New, by Conrad William Cooke
+
+This eBook is for the use of anyone anywhere in the United States and most
+other parts of the world at no cost and with almost no restrictions
+whatsoever.  You may copy it, give it away or re-use it under the terms of
+the Project Gutenberg License included with this eBook or online at
+www.gutenberg.org.  If you are not located in the United States, you'll have
+to check the laws of the country where you are located before using this ebook.
+
+
+
+Title: Automata Old and New
+
+Author: Conrad William Cooke
+
+Release Date: October 26, 2017 [EBook #55817]
+
+Language: English
+
+Character set encoding: UTF-8
+
+*** START OF THIS PROJECT GUTENBERG EBOOK AUTOMATA OLD AND NEW ***
+
+
+
+
+Produced by deaurider, Paul Marshall and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by The Internet Archive)
+
+
+
+
+
+
+</pre>
+
+<div class="figcenter covernote">
+    <img src="images/cover.jpg" alt="Book Cover." width="600" height="671" />
+</div>
+<hr class="r5" />
+<div class="figcenter">
+    <img src="images/deco01.jpg" alt="_" width="400" height="57" />
+</div>
+
+<p class="f200"><b>PRIVATELY PRINTED OPUSCULA.</b></p>
+
+<p class="f150"><i><span class="smcap">Issued to Members of the Sette of Odd Volumes</span></i>.</p>
+
+<p class="f120">No. XXIX.</p>
+
+<hr class="r25" />
+<h1>AUTOMATA OLD AND NEW.</h1>
+
+<div class="figcenter">
+    <img src="images/deco02.jpg" alt="_" width="100" height="38" />
+</div>
+<hr class="r25" />
+<div class="figcenter">
+    <a name="Fig_17" id="Fig_17"></a>
+    <img src="images/i_002.jpg" alt="_" width="500" height="721" />
+    <p class="author">[<a href="#Page_54"><i>See page 54</i></a>.&emsp;&nbsp;</p>
+</div>
+<hr class="chap" />
+<div class="figcenter">
+    <img src="images/title.jpg" alt="_" width="600" height="85" />
+</div>
+<p class="center"><small>BY</small><br /><big><b>CONRAD WILLIAM COOKE, <span class="smcap">M.Inst.E.E.</span></b></big></p>
+
+<p class="f120"><i>Mechanick</i> to the Sette of Odd Volumes</p>
+<hr class="r5" />
+
+<p class="center space-below2"><i>Delivered at a Meeting of the Sette held at<br />
+Limmer’s Hotel, on Friday,<br />November 6th</i>, 1891</p>
+
+<div class="figcenter">
+    <img src="images/deco06.jpg" alt="_" width="200" height="129" />
+</div>
+
+<p class="center space-above2">LONDON<br />IMPRINTED AT THE CHISWICK PRESS<br />MDCCCXCIII</p>
+
+<hr class="chap" />
+<p class="center"><span class="smcap">To their Oddships</span></p>
+
+<p class="center"><big><b>CHARLES HOLME, F.L.S.</b></big><br />
+(<i>Pilgrim</i>),<br /><b><span class="smcap">President</span>, 1890.</b></p>
+
+<p class="center space-above1"><big><b>GEORGE CHARLES HAITÉ, R.B.A., F.L.S.</b></big><br />
+(<i>Art Critic</i>),<br /><b><span class="smcap">President</span>, 1891.</b></p>
+
+<p class="center"><span class="smcap">and</span></p>
+
+<p class="center space-above1"><big><b>WILLIAM MURRELL, M.D.</b></big><br />
+(<i>Leech</i>),<br /><b><span class="smcap">President</span>, 1892.</b></p>
+
+<p class="f120 space-above2">DURING WHOSE YEARS OF OFFICE<br />THE FOLLOWING NOTES ON<br />
+<big>AUTOMATA</big><br />WERE RESPECTIVELY<br />PREPARED, PRESENTED AND PRINTED,<br />
+<big>THIS LITTLE BOOK</big><br />IS DEDICATED BY<br />
+<span class="ws10">&nbsp;</span><big><span class="smcap">Conrad W. Cooke,</span></big><br />
+<span class="ws6">&nbsp;</span><i>Mechanick to ye Sette of Odd Volumes</i>.</p>
+<hr class="r5" />
+<div class="figcenter">
+    <img src="images/deco03.jpg" alt="_" width="200" height="30" />
+</div>
+
+<p class="f120 space-below2"><i>This edition is limited to 255 copies, and<br />
+is imprinted for private circulation only.</i></p>
+
+<div class="figcenter">
+    <img src="images/i_007.jpg" alt="_" width="500" height="178" />
+</div>
+
+<div class="figcenter">
+    <img src="images/deco04.jpg" alt="_" width="100" height="48" />
+</div>
+
+<p><span class="pagenum"><a name="Page_11" id="Page_11">[11]</a></span></p>
+
+<div class="figcenter">
+    <img src="images/i_010.jpg" alt="_" width="600" height="754" />
+</div>
+<hr class="full" />
+<div class="chapter">
+<div class="figcenter">
+    <img src="images/deco05.jpg" alt="_" width="600" height="140" />
+</div>
+<h2>AUTOMATA OLD AND NEW.</h2></div>
+
+<div>
+  <img class="drop-cap" src="images/letter_m.jpg" width="80" height="82" alt="" />
+</div>
+
+<p class="drop-cap no-indent">May it please your Oddship, Brethren and Guests of
+Y<sup>e</sup> Sette of Odd Volumes. The origin of this little paper is
+very simple. Just eleven months ago we had the delight of listening to
+the very interesting and instructive communication upon the work of
+that wonderful mechanical genius, electrician, and <i>prestidigitateur</i>,
+Robert-Houdin, presented to us by my very good friend, our revered
+Seer, Brother Manning. With the object of contributing something to the
+discussion which followed that paper, I began to make a few notes upon
+Automata, with which subject the name of Robert-Houdin must for ever be
+<span class="pagenum"><a name="Page_12" id="Page_12">&nbsp;&emsp;[12]</a></span>
+associated; I soon found, however, that the subject was so
+comprehensive and went back into such remote periods of antiquity, that
+to do it even the most scanty justice would require a paper devoted to
+itself alone; and, as our esteemed Pilgrim and Past-President, Brother
+Holme, was at that time pressing me for a paper with that persistency
+and importunity which characterized his presidentship and gave it so
+much of its success, I, as a loyal Odd Volume, felt bound to obey
+the mandate of his Oddship; and, holding the honourable office of
+<i>Mechanick</i> to the Sette, I have chosen “Automata Old and New” for
+the subject of this communication.</p>
+
+<p>The word Automaton would in its strictest and most comprehensive sense
+include all apparently self-moving machines or devices which contain
+within themselves their own motive power, and in this sense such
+machines as clocks and watches, and even locomotives and steamships
+might be included. I shall, however, throughout this paper limit myself
+<span class="pagenum"><a name="Page_13" id="Page_13">[13]</a></span>
+to the more restricted and more ordinarily accepted meaning of the
+term, namely, such self-moving machines as are made either in the forms
+of men or of animals, or by which animal motions and functions are more
+or less imitated.</p>
+
+<p>As mechanics, next to mathematics and astronomy, is the most ancient
+of sciences, and as the scientific knowledge of the ancients was ever
+shrouded in mystery to conceal it from the eyes of the vulgar, and to
+confer upon the initiated power and profit by working on the credulity
+of the ignorant, it was but only to be expected that mechanical
+science should be early applied in the ancient mysteries by which the
+philosophers and the priests of antiquity maintained so much of their
+supremacy.</p>
+
+<p>One of the very earliest allusions to mysterious self-moving machines
+is to be found in the eighteenth book of the “Iliad,” wherein we are
+told of Vulcan that
+<span class="pagenum"><a name="Page_14" id="Page_14">[14]</a></span></p>
+
+<div class="poetry-container"><div class="poem"><div class="stanza">
+<span class="i0">“Full twenty tripods for his hall he fram’d,</span>
+<span class="i0">That, placed on living wheels of massy gold</span>
+<span class="i0">(Wondrous to tell) instinct with spirit roll’d</span>
+<span class="i0">From place to place, around the bless’d abodes,</span>
+<span class="i0">Self-mov’d, obedient to the beck of gods.”<a name="FNanchor_1_1" id="FNanchor_1_1"></a><a href="#Footnote_1_1" class="fnanchor">[1]</a></span>
+</div></div></div>
+
+<p>Several others of the ancient poets besides Homer have sung about
+the wonderful mechanical devices of Vulcan, among which were golden
+statues, the semblances of living maids, which not only appeared to be
+endued with life, but which walked by his side and bore him up as he
+walked. Aristotle also refers to self-moving tripods, and Philostratus
+states that Appolonius of Tyana saw similar pieces of mechanism among
+the Brahmins of India; but this must have been nearly four hundred
+years after Aristotle wrote, and some nine hundred years after the time
+of Homer.</p>
+
+<p>Then again we hear of Dædalus making self-moving statues, small figures
+of the gods, of which Plato in his “Menos” says that unless they were
+<span class="pagenum"><a name="Page_15" id="Page_15">[15]</a></span>
+fastened they would of themselves run away, and he puts this into the
+mouth of Socrates, who uses it as a figure to illustrate the importance
+of not only acquiring but of holding fast scientific truth that it may
+not fly away from us. Aristotle in referring to these statues affirms
+that Dædalus accomplished his object by putting into them quicksilver,
+but the learned mechanician Bishop Wilkins points out that “this would
+have been too grosse a way for so excellent an artificer; it is more
+likely that he did it with wheels and weights.”<a name="FNanchor_2_2" id="FNanchor_2_2"></a><a href="#Footnote_2_2" class="fnanchor">[2]</a>
+We are moreover told by Macrobius<a name="FNanchor_3_3" id="FNanchor_3_3"></a><a href="#Footnote_3_3" class="fnanchor">[3]</a>
+that in the temple of Hieropolis at Antium there were moving statues.</p>
+
+<p>A contemporary of Plato and, it is said, his master, was Archytas
+of Tarentum, the celebrated Pythagorean philosopher, mathematician,
+cosmographer, and mechanician, to whom is accredited the invention of
+<span class="pagenum"><a name="Page_16" id="Page_16">[16]</a></span>
+the screw and of the crane. Archytas is said to have constructed of
+wood a pigeon that could fly about, but which could not rise again
+after it had settled; and Aulus Gellius (who lived in the reigns of
+Trajan, Hadrian, Antoninus Pius, and Marcus Aurelius), tells us in
+his “Noctes Atticæ,” that “many men of eminence among the Greeks, and
+Favonius, the philosopher, a most vigilant searcher into antiquity,
+have in a most positive manner assured us that the model of a pigeon,
+formed in wood by Archytas, was so contrived as by a certain mechanical
+art and power to fly; so nicely was it balanced by weights and put
+in motion by hidden and inclosed air. In a matter so very improbable
+we may be allowed to add the words of Favonius himself: ‘Archytas of
+Tarentum, being both a philosopher and skilled in mechanics, made a
+wooden pigeon which had it ever settled would not have risen again till
+now.’”<a name="FNanchor_4_4" id="FNanchor_4_4"></a><a href="#Footnote_4_4" class="fnanchor">[4]</a>
+And I am bound to admit that in this point I agree with him.
+<span class="pagenum"><a name="Page_17" id="Page_17">[17]</a></span></p>
+
+<p>From the above description it would appear that a still greater
+invention than a flying automaton was made by Archytas, for in an
+apparatus “<i>so nicely balanced by weights and put in motion by hidden
+and inclosed air</i>,” we have a very fair forecast of the modern
+aërostat or balloon, filled with gas and balanced by ballast. There
+cannot be any doubt but that the accounts of these very early machines
+(if such ever existed at all), have been greatly exaggerated during
+the process of being handed down through long ages of ignorance and
+credulity; but we may now enter upon surer ground although still very
+ancient. In the reign of Ptolemy Euergetes II. (Ptolemy VII.), about
+150 years <span class="smcap">b.c.</span>, there lived at Alexandria that great
+genius of mechanical science, Hero; and his remarkable book “Spiritalia,” of
+which I am able to show you several copies to-night, is itself a great
+storehouse of ingenuity in the construction of automata of very various
+forms and principles. This remarkable man was, if not the inventor, the
+<span class="pagenum"><a name="Page_18" id="Page_18">[18]</a></span>
+first describer of the siphon in both its typical forms, the syringe,
+the well-known portable shower-bath, the clack valve, the fire engine,
+even with that mechanical refinement, an air vessel for insuring a
+continuous stream, a self-trimming lamp, the steam blowpipe, the
+pneumatic fountain called after his name, a steam engine, and last if
+not least, the penny-in-the-slot automatic machine for obtaining a
+drink, or, may be, a charge of scent.</p>
+
+<p>I propose now to show you on the screen some photographic reproductions
+of pages in his book, some taken from the Latin edition of Commandinus,
+published at Urbino in 1575, and some from the Italian edition of
+Alessandro Georgi, printed at the same place in 1592, some from the
+fine edition of Aleotti, published in 1589, and others from the
+Amsterdam version of 1680, all of which editions I am able to show you.
+I have, moreover, copied some from manuscripts in the British Museum,
+<span class="pagenum"><a name="Page_19" id="Page_19">[19]</a></span>
+of the fifteenth and sixteenth centuries, of which there are four in
+the National Library, <i>i.e.</i>, two in the Harley Collection and two
+among the Burney manuscripts.</p>
+
+<div class="figcenter">
+    <a name="Fig_1" id="Fig_1"></a>
+    <img src="images/i_019.jpg" alt="_" width="600" height="437" />
+    <p class="f110"><b>Fig. 1.</b></p>
+</div>
+
+<p>The first illustration I shall show you from Hero’s work is a bird
+which, by means of a stream of water, is caused to pipe or sing. This
+little automaton consists of a pedestal (A B C D) (<a href="#Fig_1">Fig. 1</a>), which is in
+reality a water-tight tank fitted with a funnel (E), the stem of which
+reaches nearly to the bottom; to the right of this there is a little
+<span class="pagenum"><a name="Page_20" id="Page_20">[20]</a></span>
+bush on which sits a bird, and a tube (G H) leads up from the roof of
+the tank and terminates in a little whistle, the end of which dips into
+a cup (L) containing water. When water is poured into the funnel, the
+air in the tank is driven out through the tube and whistle (G H) and,
+bubbling through the water, sounds as if the bird were singing. Thus
+the well-known bubbling bird-whistle dates back to a century and a half
+before the Christian era or earlier.</p>
+
+<p>The next illustration (<a href="#Fig_2">Fig. 2</a>) shows a more elaborate arrangement, in
+which there are four small birds being watched by an owl; the moment
+the owl’s back is turned the birds begin to sing, but cease as soon as
+he turns towards them. In this apparatus the birds are made to sing
+in precisely the same way as in the last illustration, namely, by the
+displacement by water of the air in the tank, but as soon as the level
+of the water in the tank reaches the top of a concentric siphon (F G)
+the water is discharged into a bucket, the birds cease to sing, and the
+<span class="pagenum"><a name="Page_21" id="Page_21">[21]</a></span>
+bucket, owing to its increased weight, lifts the counterbalance weight
+(Z), and in doing so turns the spindle (P M) which supports the owl
+(R S). When the bucket is full its contents are discharged by a small
+siphon within it and it is drawn up by the weight (Z) the owl turns its
+back to the birds, and the cycle of operations is repeated.</p>
+
+<div class="figcenter">
+    <a name="Fig_2" id="Fig_2"></a>
+    <img src="images/i_021.jpg" alt="_" width="600" height="599" />
+    <p class="f110"><b>Fig. 2.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_22" id="Page_22">[22]</a></span>
+In the next figure a still more elaborate effect is produced. Here is a
+pedestal upon which are four little bushes each having a bird sitting
+in its branches; when water is allowed to flow into the funnel the
+first bird begins to whistle, and after a few minutes leaves off, when
+<span class="pagenum"><a name="Page_23" id="Page_23">[23]</a></span>
+the next bird begins, and when he has finished the third bird sings,
+after a little time the fourth takes up the song, and when he has
+finished the first begins again, and so on as long as water is flowing
+into the funnel. These effects are produced in the simplest possible
+manner, by a combination of as many superposed tanks as there are birds
+to sing, the one emptying into the other by siphons. The illustration
+explains itself.</p>
+
+<div class="figcenter">
+    <a name="Fig_3" id="Fig_3"></a>
+    <img src="images/i_022.jpg" alt="_" width="500" height="629" />
+    <p class="f110"><b>Fig. 3.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_24" id="Page_24">[24]</a></span>
+In the next device (<a href="#Fig_4">Fig. 4</a>) we have a bird whose singing is
+<i>intermittent</i>. In this case the water flows into a little cup which
+topples over the moment it is full, emptying itself into the funnel and
+immediately righting itself (being loaded at its bottom), the sound is
+produced by the displaced air escaping through a whistle in the manner
+already described.</p>
+
+<div class="figcenter">
+    <a name="Fig_4" id="Fig_4"></a>
+    <img src="images/i_023.jpg" alt="_" width="600" height="586" />
+    <p class="f110"><b>Fig. 4.</b></p>
+</div>
+<hr class="chap" />
+<div class="figcenter">
+    <a name="Fig_5" id="Fig_5"></a>
+    <img src="images/i_025.jpg" alt="_" width="600" height="505" />
+    <p class="f110"><b>Fig. 5.</b></p>
+</div>
+
+<p>We now come to a different class, in which heat is employed for
+obtaining an increase of air pressure whereby certain automatic actions
+are produced. Here we have a priest and priestess officiating at an
+altar; and the effect of lighting the fire thereon is to cause the two
+figures to pour libations onto the sacrifice. In this case the altar
+consists of an air-tight metallic box in communication, by means of a
+central tube, with a larger box forming the pedestal. Into this lower
+reservoir is poured the wine or other liquid through the hole marked
+M. When the fire is lighted the air in the altar is expanded,
+and pressing on the surface of the liquid in the pedestal, forces some
+of it through the tubes which pass through the body and down the right
+<span class="pagenum"><a name="Page_25" id="Page_25">[25]</a></span>
+arm of each figure. In the next view (<a href="#Fig_6">Fig. 6</a>) we see how this principle
+was employed by Hero for the opening of the doors of a temple, the
+tradition being that when a sacrifice was offered on her altar the
+goddess Isis showed her invisible presence by throwing open the doors
+of her sanctuary. In this case the altar consists of an air-tight
+<span class="pagenum"><a name="Page_26" id="Page_26">[26]</a></span>
+metallic box communicating by means of a tube (F G) with a spherical
+vessel (H) partly filled with water. When the altar becomes hot the
+contained air is expanded, thereby increasing the pressure on the
+surface of the water, some of which is therefore forced through the
+bent tube (L) into the bucket (M), which descends by its increased
+weight, thereby unwinding the cords from the two spindles that perform
+the function of hinges to the temple doors, at the same time winding up
+<span class="pagenum"><a name="Page_27" id="Page_27">[27]</a></span>
+the counterweight (R) on the left. When the fire goes out the altar
+cools, assuming its ordinary atmospheric pressure, and the water
+in the bucket is forced back into the vessel (H), and the weight
+counterbalancing the empty bucket, closes again the doors.</p>
+
+<div class="figcenter">
+    <a name="Fig_6" id="Fig_6"></a>
+    <img src="images/i_026.jpg" alt="_" width="600" height="442" />
+    <p class="f110"><b>Fig. 6.</b></p>
+</div>
+
+<p>Like many other geniuses who have lived before their time, Hero had his
+plagiarists, his devices having been adopted and described by later
+writers without one word of acknowledgment as to their authorship. From
+the middle to the end of the seventeenth century several books appeared
+which to a great extent were simply bad and erroneous copies of Hero’s
+inventions, and not even intelligently copied. Here for instance (<a href="#Fig_7">Fig. 7</a>)
+is a <i>facsimile</i> of an illustration in a curious old book, “The
+Mysteries of Nature and Art,” by John Bate, published in 1635; this
+is poor Bate’s attempt to steal Hero’s device for the temple doors,
+showing an altogether impossible scheme. In the first place the doors
+could not open at all, for the ropes are so coiled as to neutralize
+<span class="pagenum"><a name="Page_28" id="Page_28">[28]</a></span>
+each other’s action, and, secondly, the counterweight to the right has
+its cord simply looped round the spindle and therefore is absolutely
+useless; the accompanying description is even more absurd, for it
+explains the action of the apparatus as follows: “The fier on the Altar
+will cause the water to distill out of the Ball into the Bucket, which
+when (by reason of the water) it is become heavier than the waight, it
+will draw it up and so open the sayd gates or little doores.”</p>
+
+<div class="figcenter">
+    <a name="Fig_7" id="Fig_7"></a>
+    <img src="images/i_028.jpg" alt="_" width="600" height="437" />
+    <p class="f110"><b>Fig. 7.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_29" id="Page_29">[29]</a></span>
+Again, in one of Hero’s illustrations a revolving disc carrying little
+figures was made to rotate upon the reaction principle of his own
+Æolipile, or steam engine. By a little bit of bad perspective the ends
+of the cross tubes were shown as turning alternately up and down, and
+Bate not only repeats this error, but goes out of his way to point out
+that “in the middest” there must be “a hollow pipe spreading itself
+into foure severall branches at the bottom: <i>the ends of two of the
+branches must turn up and the ends of two must turn down</i>,” thus making
+any rotative action impossible.</p>
+
+<p>But Bate was not the only pirate of Hero’s work; a few years after Bate
+had written, that is, in 1659, there appeared another curious book by
+Isaak de Caus, upon Water Works,<a name="FNanchor_5_5" id="FNanchor_5_5"></a><a href="#Footnote_5_5" class="fnanchor">[5]</a>
+and in that book we find our old
+<span class="pagenum"><a name="Page_30" id="Page_30">[30]</a></span>
+friend the owl keeping the small birds in order, the only difference
+being that this is a more indulgent owl, or perhaps he is a teacher of
+singing, for in this case the birds sing while he is looking at them
+and cease the moment he turns his back.</p>
+
+<div class="figcenter">
+    <a name="Fig_8" id="Fig_8"></a>
+    <img src="images/i_030.jpg" alt="_" width="600" height="629" />
+    <p class="f110"><b>Fig. 8.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_31" id="Page_31">[31]</a></span>
+Another pretty conceit of Hero’s is shown in <a href="#Fig_8">Fig. 8</a>, in which there is
+a bird which not only makes a noise but at certain times will drink any
+liquid which is presented to it. The flow of water being intermittent,
+the cistern forming the pedestal is alternately filled and emptied.
+While it is being filled the air escapes through a whistle and causes
+the bird to sing, and when it is being emptied, by means of a siphon,
+a partial vacuum is produced and liquid presented to it is drawn up
+through the beak.</p>
+
+<div class="figcenter">
+    <a name="Fig_9" id="Fig_9"></a>
+    <img src="images/i_032.jpg" alt="_" width="500" height="583" />
+    <p class="f110"><b>Fig. 9.</b></p>
+</div>
+
+<p>The next automaton from Hero is very ingenious and interesting, because
+it combines hydraulic, pneumatic, and mechanical actions. Here (<a href="#Fig_9">Fig. 9</a>)
+is a figure of Hercules armed with a bow and arrow; there is also
+a dragon under an apple tree, from which an apple has fallen to the
+ground. Upon the apple being lifted, Hercules discharges the arrow
+at the dragon, which begins to hiss and continues to do so for some
+minutes. In this apparatus there is a double tank having a connection
+<span class="pagenum"><a name="Page_32" id="Page_32">[32]</a></span>
+by a valve (H), which is attached by a cord to the apple (K),
+another cord, passing over a pulley, connects the apple with a trigger
+in the right hand of Hercules. Upon lifting the apple the trigger is
+<span class="pagenum"><a name="Page_33" id="Page_33">[33]</a></span>
+released, and at the same time the valve is opened, allowing the water
+in the upper tank to flow into the lower, by which means air is forced
+through a tube (Z) into the dragon’s mouth, producing a hissing sound,
+and this will continue until the upper tank is empty. Here (<a href="#Fig_10">Fig. 10</a>)
+is Bate’s version of the same device, but very inferior to that from which
+it was taken.</p>
+
+<div class="figcenter">
+    <a name="Fig_10" id="Fig_10"></a>
+    <img src="images/i_033.jpg" alt="_" width="600" height="520" />
+    <p class="f110"><b>Fig. 10.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_34" id="Page_34">[34]</a></span>
+The next photograph is taken from another work of Hero’s, “<i>Quatro
+theoremi aggiunti a gli artifitiosi spiriti</i>,” a copy of which I have
+here (<a href="#Fig_11">Fig. 11</a>), and which was printed at Ferrara in 1589.</p>
+
+<div class="figcenter">
+    <a name="Fig_11" id="Fig_11"></a>
+    <img src="images/i_034.jpg" alt="_" width="600" height="571" />
+    <p class="f110"><b>Fig. 11.</b></p>
+</div>
+
+<p>This figure illustrates a very elaborate automaton, representing one
+of Vulcan’s workshops in which you will see a smith forging a piece of
+iron, and assisted by three hammermen. The smith first puts his iron
+in the fire and then lays it on the anvil when the hammermen begin
+to hammer it; then they leave off, and the smith turns round again
+to the fire. All these effects are produced by the machinery below
+the floor, and shown in the illustration. A shaft (A B) is driven by
+means of a water-wheel on the right, and on this shaft are projections
+or cambs which, by striking the ends of three levers (T, X, and V),
+pull the chains by which the arms of the hammermen are lifted. While
+this is going on the bucket (marked 20) is slowly filling, and when
+a sufficient weight of water has accumulated in it, it lifts the
+counterweight (17), and, in doing so, rotates the vertical shaft to
+<span class="pagenum"><a name="Page_35" id="Page_35">[35]</a></span>
+which the figure of the smith is attached, turning him round to the
+fire, and at the same time, by swinging round the conduit pipe (H I),
+cuts off the water from the wheel, and the hammermen cease to work
+until the smith is again ready for them. I think you will agree with me
+that this machine offers very fair evidence of the mechanical ingenuity
+of a man who flourished more than 2,000 years ago.</p>
+
+<p>The last automaton of Hero to which I shall refer is perhaps the most
+ingenious of all, and it is one that those who were present when
+Brother Manning gave us his discourse on Robert-Houdin have already
+seen, I mean the little figure whose head cannot be severed from his
+body no matter how many times a knife be passed through his neck.
+Thanks to the kindness of my good friend I can show you one of these
+beautiful figures presented to me by him, and it will, I think, be of
+interest to him and to you to know that this device was invented nearly
+<span class="pagenum"><a name="Page_36" id="Page_36">[36]</a></span>
+2,000 years before Robert-Houdin was born, and a description of it
+with accompanying figures may be seen to-day in the British Museum in
+a Greek manuscript of the fifteenth century, which is a copy of Hero’s
+Σπειριταλια, and I now throw on the screen a carefully made facsimile
+(<a href="#Fig_12">Fig. 12</a>) of the figure given in that manuscript
+(which is known as No. 5605 of the Harleian Collection).</p>
+
+<div class="figcenter">
+    <a name="Fig_12" id="Fig_12"></a>
+    <p class="f120"><b>-HARLEIAN MANUSCRIPT<br />-(FIFTEENTH CENTURY)-</b></p>
+    <img src="images/i_037.jpg" alt="_" width="600" height="590" />
+    <p class="f110"><b>Fig. 12.</b></p>
+</div>
+
+<p>The head of this figure, which is otherwise separate from it, is
+attached to it by a peculiar shaped wheel pivotted between the
+shoulders of the body. This wheel may be described as a circular
+disc having an expanded rim so that a section taken through a radius
+would be of the form of the letter <big><b>T</b></big>, out of this wheel three
+nearly semicircular gaps are cut, each occupying sixty degrees of the
+circumference, and therefore leaving three portions of the rim, each
+also of sixty degrees. The neck attached to the head is fitted with a
+hollow <big><b>T</b></big> shaped circular groove into which the <big><b>T</b></big> ended
+<span class="pagenum"><a name="Page_37" id="Page_37">[37]</a></span>
+arms of the wheel pass in succession as the wheel is rotated. As the
+groove in the head occupies nearly sixty degrees it follows that as the
+wheel is rotated the rim of one arm can never leave the groove before
+<span class="pagenum"><a name="Page_38" id="Page_38">[38]</a></span>
+the rim of the following arm has entered it, and so the head is
+attached to the body in every position of the wheel. When the knife
+is passed between the head and the body it strikes against one of the
+spokes of the wheel, moving it forward and pushing one of the arms out
+of the groove in the head, while, at the same time, another, following
+behind the knife, takes its place, and thus the head can never be
+detached from the body. Such an automaton is the little negro which I
+hold in my hand, for which I am indebted to the fraternal generosity of
+Brother Manning. Hero’s description, however, carries the ingenuity of
+the device considerably farther, for in his automaton, not only is it
+impossible to sever the head from the body by passing a knife through
+the neck, but the figure can actually drink both before and after
+the operation. The illustration on the screen (<a href="#Fig_13">Fig. 13</a>)
+is a sort of modern restoration of the Harley drawing, showing the disposition
+of the various parts of the mechanism. (A) represents the wheel by which the
+<span class="pagenum"><a name="Page_39" id="Page_39">[39]</a></span>
+head is held on to the body, and it will be noticed that a tube D D
+leads from the mouth to the neck and another, E, from the neck through
+the body; these two tubes, marked respectively D D and E, are connected
+by the sliding tube F, which is attached to the two racks F and G, into
+<span class="pagenum"><a name="Page_40" id="Page_40">[40]</a></span>
+which are geared the two toothed wheels B and C. When the knife is
+passed from P to O it first rotates the holding-on wheel A, and then
+strikes against the radial face of the wheel C, turning it through
+a small arc, thereby moving the racks, and, sliding the connecting
+tube F out of D, allowing the knife to pass, which next strikes the
+radial face of the wheel B, and, by turning it, restores the sliding
+connecting tube F into D, and thus recompletes the connection. The
+sucking-up the liquid being accomplished in a similar manner to that in
+the drinking bird already described.<a name="FNanchor_6_6" id="FNanchor_6_6"></a><a href="#Footnote_6_6" class="fnanchor">[6]</a></p>
+
+<div class="figcenter">
+    <a name="Fig_13" id="Fig_13"></a>
+    <img src="images/i_039.jpg" alt="_" width="600" height="561" />
+    <p class="f110"><b>Fig. 13.</b></p>
+</div>
+
+<p>I have now done with Hero of Alexandria, but, before passing to another
+period, I cannot resist showing you an invention of his which although
+not an automaton is too interesting in the light of modern civilization
+to omit. This (<a href="#Fig_14">Fig. 14</a>) is Hero’s automatic penny-in-the-slot
+machine for giving a drink in exchange for a coin. If a “coin of five drachmas”
+<span class="pagenum"><a name="Page_41" id="Page_41">[41]</a></span>
+be dropped into the slot it falls on a little plate at the end of a
+lever thereby opening a valve and allowing the liquid to escape through
+the nozzle.</p>
+
+<div class="figcenter">
+    <a name="Fig_14" id="Fig_14"></a>
+    <img src="images/i_041.jpg" alt="_" width="500" height="624" />
+    <p class="f110"><b>Fig. 14.</b></p>
+</div>
+
+<p>It is more than probable that Hero was not himself the inventor of all
+the devices he describes, it is possible that many are due to Ctesibius
+whose pupil he was, and it is clear, from his own writings, that he
+was acquainted with the writings of Philo and of Archimedes. He was,
+<span class="pagenum"><a name="Page_42" id="Page_42">[42]</a></span>
+however, the first to <i>describe</i> these inventions, and therefore it is
+only fair, in the absence of other evidence, to give him the credit.</p>
+
+<div class="figleft">
+    <a name="Fig_15" id="Fig_15"></a>
+    <img src="images/i_042.jpg" alt="_" width="150" height="382" />
+    <p class="f110"><b>Fig. 15.</b></p>
+</div>
+
+<p>There can be no doubt that puppets or dolls are of great antiquity;
+they were common with the ancient Egyptians, and here (<a href="#Fig_15">Fig. 15</a>)
+is an illustration of a doll from Thebes which is now in the British Museum,
+and you will notice that the head is covered with holes which served
+for the insertion of strings of beads to represent hair. Puppets were
+also in use with the Greeks, and afterwards found their way to Rome,
+and it is an interesting fact that, about three years ago, while the
+ground was being excavated for the foundations of the new Palais de
+Justice at Rome, at a spot not far from the Vatican, a stone coffin was
+discovered containing the skeleton of a young girl of about fifteen
+years of age, who had teeth of great beauty, and in her arms was a
+<span class="pagenum"><a name="Page_43" id="Page_43">[43]</a></span>
+beautifully modelled wooden doll with jointed limbs which was dressed
+in a rich material. The interment had taken place in the time of
+Pliny, who refers to the child, and mentions that she was engaged to
+be married, a statement which is supported by the fact that on one of
+the fingers is a doubly-linked gold ring, besides other ornaments. The
+coffin, with its contents as they were found, is now in the museum
+in the Capitol and it is, I believe, the only instance of an ancient
+doll having been found in Rome, although moving puppets or marionettes
+were known in very ancient times, and are referred to by Xenophon,
+Aristotle, Horace, Antoninus, Galen, and Aulus Gellius.</p>
+
+<p>The next figure is an illustration of what I suppose must be the very
+earliest moving doll in existence to-day; it is now in the Museum van
+Oudheden at Leyden, and is a toy which belonged to a child of ancient
+Egypt; I have constructed a model of it by which you will see that it
+is worked by pulling a thread; and here I must make a passing reference
+<span class="pagenum"><a name="Page_44" id="Page_44">[44]</a></span>
+to the notorious phallic figures which were carried in procession
+during the festivals of Osiris and in the Dionysia of Bacchus. We are
+told by Lucian<a name="FNanchor_7_7" id="FNanchor_7_7"></a><a href="#Footnote_7_7" class="fnanchor">[7]</a>
+that “Among the several sorts of Phalloi which the
+Greeks set up in honour of Bacchus there were figures of dwarfs with
+moving parts actuated by strings, which were called <b>‘Νευροσπαστα’</b>.” In
+so eminently proper a community as We are in Ye Sette of Odd Volumes,
+I am unable to describe these figures in detail, or to exhibit them in
+action, but those who are <i>curious</i> as well as <i>odd</i> will find
+<span class="pagenum"><a name="Page_45" id="Page_45">[45]</a></span>
+abundant evidence of them in the writings of Herodotus, of Lucian, of
+Pausanias, of Athenæus, of Plutarch, of Gyraldus, and of several other writers.</p>
+
+<div class="figcenter">
+    <a name="Fig_16" id="Fig_16"></a>
+    <img src="images/i_044.jpg" alt="_" width="600" height="301" />
+    <p class="f110"><b>Fig. 16.</b></p>
+</div>
+
+<p>The earliest forms of moving puppets were set in motion by strings
+pulled by hand which were afterwards supplanted by cylinders turned by
+a winch, and the transition from that arrangement to the use of weights
+and springs was inevitable and was only a question of time.</p>
+
+<p>From the time of Hero I have found nothing worth recording for nearly
+a thousand years, until the time of Charlemagne, to which monarch was
+presented by the Kalif Haroun al Raschid a most elaborate water clock.
+In front of the dial, and corresponding to the hours, were twelve
+little doors, and the time was shown by these doors opening one after
+another, each releasing a little brass ball which fell upon a small
+bell; after all the hours had struck, that is, at noon, another door
+opened, twelve little knights rode out, and, after careering round the
+<span class="pagenum"><a name="Page_46" id="Page_46">[46]</a></span>
+dial, they closed the doors and retired. The eminent mechanician
+Gerbert who occupied the papal chair in <span class="smcap">a.d.</span> 1000,
+reigning under the name of Silvester II., is said to have constructed a
+speaking head of brass, and was in consequence arrested for practising
+magic, and Albertus Magnus, who flourished in the thirteenth century,
+spent, according to his own account, thirty years in the construction
+of an automaton of clay which not only spoke but walked and answered
+questions and solved problems submitted to it. It is recorded that his
+pupil, the celebrated St. Thomas Aquinas was so horrified when he saw
+and heard this figure that (believing it to be the work of his Satanic
+Majesty), he broke it into pieces, when Albertus cried aloud: “Sic
+periit opus triginta annorum.” I deeply regret this mischievous act of
+St. Thomas Aquinas, because it renders it impossible for me to show it
+to the Brethren and our guests this evening. Roger Bacon also is said
+to have made a similar automaton.
+<span class="pagenum"><a name="Page_47" id="Page_47">[47]</a></span></p>
+
+<p>Records of speaking androides or talking heads reach us from very
+early times. At Lesbos there was a head of Orpheus which delivered
+oracles and predicted to Cyrus his violent death, and we have it on
+the authority of Philostratus that the head was so celebrated for its
+oracular utterances, among both the Greeks and the Persians that even
+Apollo became jealous of its fame.</p>
+
+<p>Then again the mighty Odin had among his mystical possessions a
+speaking head, believed to be that of Minos, which Odin preserved by
+encasing it in solid gold. He is said to have consulted it on all
+occasions, and its utterances were regarded as oracles.</p>
+
+<p>Mention might here be made of the colossal figure of Amunoph III. on
+the plain of Thebes, and which is commonly known as the “vocal Memnon,”
+of which a photograph is now before you; it is the more eastern of the
+two Colossi, and, when the first rays of the morning sun fell on it, it
+<span class="pagenum"><a name="Page_48" id="Page_48">[48]</a></span>
+emitted a sound which has been described as similar to that of the
+snapping of a harp string, but it has been silent since the time of
+Severus. It is a seated figure nearly sixty feet in height, and is in
+no sense an automaton, but I mention it here because it was believed to
+utter sentences which the ancient priests of Egypt alone, for the very
+best of reasons, knew how to interpret.</p>
+
+<p>In more modern times we hear of the eminent Dr. Wilkins, Bishop of
+Chester (who married the sister of Oliver Cromwell, and who may be
+regarded as the founder of the Royal Society), experimenting upon
+the transmission of sound; and Evelyn, in his “Diary,” writing on
+the 13th of July, 1654, says, “We all dined at that most obliging
+and universally curious Dr. Wilkins’s, at Wadham College. He had
+contrived a hollow statue, which gave a voice and uttered words”; and
+in his “Mathematicall Magick,” (a copy of which I have here) which was
+published in 1648, Wilkins refers to the speaking figures of the ancients.
+<span class="pagenum"><a name="Page_49" id="Page_49">[49]</a></span></p>
+
+<p>A contemporary of Wilkins was the celebrated Edward Somerset, Marquis
+of Worcester, who in his “Century of Inventions” gives as his 88th
+device: “How to make a Brazen or Stone-head in the midst of a great
+Field or Garden, so artificial and natural that though a man speak
+never so softly, and even whispers into the eare thereof, it will
+presently open its mouth, and resolve the Question in French, Latine,
+Welsh, Irish or English, in good terms uttering it out of his mouth,
+and then shut it untill the next Question be asked.”—But, unhappily,
+he does not tell us how it may be done.</p>
+
+<p>The great period for the construction of automata began at the close
+of the fourteenth century, and reached its climax at the end of the
+seventeenth and beginning of the eighteenth century. One of the
+earliest mechanicians who devoted his skill to automata was Johann
+Müller, of Königsberg, commonly known as Regiomontanus. This eminent
+mathematician and astronomer made of iron a fly which is said to have
+<span class="pagenum"><a name="Page_50" id="Page_50">[50]</a></span>
+left his hand and, after flying to each of the guests in the room,
+returned to its master, alighting on his hand. Müller made also a still
+more wonderful machine; this was an artificial eagle which, on the
+authority of Peter Ramus, flew to meet the Emperor Maximilian on his
+entry into Nuremberg on the 7th of June, 1470. After soaring aloft in
+the air, Ramus informs us, the eagle met the emperor at some distance
+from the city, then returned and perched upon the city gate where it
+awaited the emperor’s approach. On his arrival the bird stretched out
+its wings and saluted him by bowing.</p>
+
+<p>It is a remarkable fact that not one of Müller’s contemporaries, who
+often refer to this learned man and to his great accomplishments, makes
+any reference to these pieces of mechanism, and Peter Ramus was not
+born until forty-five years after, but they are referred to by Baptista
+Porta, Gassendi, Lana, and Bishop Wilkins, who, however, differ
+considerably in their dates. Strada, in his “De Bello Belgico,” tells
+<span class="pagenum"><a name="Page_51" id="Page_51">[51]</a></span>
+us that the Emperor Charles V., after his abdication in 1556, took a
+most keen interest in automata of various kinds, and he employed a very
+skilful artist, Janellus Turrianus, of Cremona, to construct them for
+him. This mechanic made figures of horsemen which marched along the
+table, played upon flutes and drums, and entered into combat with one
+another, and he exhibited wooden birds which flew up to their nests
+(they must, I think, have been <i>wood pigeons</i>). This Janellus Turrianus
+was evidently a very wonderful man, for he made a corn-mill so small
+that it could be concealed in a glove, and yet could grind in a day as
+much corn as would supply eight men with food. I never saw this machine
+myself, and I cannot help thinking that either the glove must have
+been rather large or the appetites of the men must have been rather
+small. Apart, however, from the exaggeration of the genius of this man,
+he was undoubtedly a most skilful mechanician, for he repaired and
+<span class="pagenum"><a name="Page_52" id="Page_52">[52]</a></span>
+considerably improved a most complex clock constructed by Wilhelm
+Zelandin for the city of Padua, in which moving figures and
+astronomical phenomena were represented.</p>
+
+<p>The addition to clocks of automata set in motion by the train was a
+very favourite occupation of the horologists of the sixteenth century.
+Of these clocks perhaps the most celebrated was that at Strasburg,
+which was constructed by Conrad Dasypodius. This clock was finished in
+the year 1573. Apart from its interesting representations of various
+celestial phenomena, it is remarkable for the number of moving figures
+which embellish it, and which perform various functions; above the dial
+the four ages of man are represented by symbolical figures; one passes
+every quarter of an hour, marking the quarter by striking on a bell;
+the first quarter is struck by a child with an apple, the second by a
+youth with an arrow, the third by a man with his staff, and the fourth
+<span class="pagenum"><a name="Page_53" id="Page_53">[53]</a></span>
+by an old man with his crutch. After these follows the figure of Death,
+who, after sounding the hour on a large bell, is expelled by a figure
+representing Christ, while two small angels are set into motion, the
+one striking a bell with a sceptre, while the other turns over an
+hour-glass at the expiration of an hour. There are, besides, various
+animals, and among them a cock, which flaps its wings and crows just
+before the clock strikes the hour.</p>
+
+<p>The great clock at Lyons, the work of Lippius of Basle, is hardly
+less interesting. Besides exhibiting mechanical illustrations of
+astronomical phenomena, a complete cycle of operations representing
+scriptural events is performed. Before each hour strikes a cock comes
+forward and crows three times, after which angels appear, who by
+striking upon a gamut of bells ring out the air of a hymn, and this is
+followed by a moving group illustrating the Annunciation of the Virgin and the
+descent of a dove, and the cycle is completed by the striking of the hour.
+<span class="pagenum"><a name="Page_54" id="Page_54">[54]</a></span></p>
+
+<p>In the Royal Palace of Versailles there was a very curious clock, the
+work of Martinot, a clockmaker of the seventeenth century. Before it
+struck the hour two cocks flapped their wings and crowed alternately,
+then two little doors opened and a figure came out of each carrying a
+gong which was struck by armed guards with their clubs. These figures
+having retired, a door in the centre opened and an equestrian figure
+of Louis XIV. came out. At the same time a group of clouds separated
+giving passage to the figure of Fame which hovered over the head of the
+king. An air was then chimed upon the bells, after which the figures
+retired; the two guards raised their clubs and the hour was struck.</p>
+
+<p>In the year 1788, Agostino Ramelli published his important work “<i>Le
+diverse ed artificiose Machine</i>,” and I have reproduced some of the
+plates in that beautiful book, a copy of which is before me (one of
+which, <a href="#Fig_17">Fig. 17, see <i>Frontispiece</i></a>, I have chosen
+to adorn the menu which is on the table, for no other reason than that it
+appeared especially appropriate as figurative of the desire of your humble
+Mechanick to be for ever associated with Ye Sette of Odd Volumes).</p>
+
+<div class="figcenter">
+    <a name="Fig_18" id="Fig_18"></a>
+    <img src="images/i_054.jpg" alt="_" width="500" height="738" />
+    <p class="f110"><b>Fig. 18.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_55" id="Page_55">[55]</a></span>
+In the next illustration (<a href="#Fig_18">Fig. 18</a>) we have a beautiful
+plate from Ramelli, in which another of Hero’s inventions, the group of singing
+birds is introduced as an ornament in an elaborately furnished room
+of the period. In this case the water is in the first instance lifted
+by air being blown in through a pipe by a person concealed behind the
+wall which in the drawing is broken away to show a mediæval old buffer
+engaged in this manly performance.</p>
+
+<p>About the middle of the seventeenth century magnetism began to be
+employed for producing the effects of magic, and that extraordinary
+versatile all-round Odd Volume, Athanasius Kircher, in his “Magnes sive
+de Arte Magnetica,” which was published in 1641 (a copy of which I have
+here), describes and illustrates several automata which depend for
+<span class="pagenum"><a name="Page_56" id="Page_56">[56]</a></span>
+their action upon magnetism. Here, for example (<a href="#Fig_19">Fig. 19</a>),
+he gives a representation of the Dove of Archytas, which by the action of a
+revolving loadstone, is made to fly around a dial and mark the hours by
+pointing to the figures on its edge.</p>
+
+<div class="figcenter">
+    <a name="Fig_20" id="Fig_20"></a>
+    <img src="images/i_056.jpg" alt="_" width="600" height="434" />
+    <p class="f110"><b>Fig. 20.</b></p>
+</div>
+
+<p>Time will not permit me to say as much about this curious old book
+as its quaintness and terribly bad science deserve, I will only show
+you one more illustration from it in which a wheel is driven round
+by two Æolipiles in the form of human heads, which blow out jets of
+steam against the cellular periphery of the wheel, and in the lower
+figure the little boilers (C and D) which the heads inclose, are shown
+separately, the nozzle of one pointing upwards, while that of the other
+has a downward direction.</p>
+
+<div class="figcenter">
+    <a name="Fig_19" id="Fig_19"></a>
+    <img src="images/i_056a.jpg" alt="_" width="500" height="746" />
+    <p class="f110"><b>Fig. 19.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_57" id="Page_57">[57]</a></span>
+When Kircher’s book was published Louis XIV. was a child, and it is
+stated by several authorities that both Père Truchet and Camus made the
+most elaborate automata for his boyish amusement, but as Louis XIV. was
+forty years old when Truchet came of age and fifty-five When Camus was
+twenty-one it is difficult to reconcile these statements with facts.</p>
+
+<p>Putting aside, however, the question of the period of life when the
+king amused himself with such things, it is well authenticated that
+Père Truchet, towards the end of the seventeenth century, constructed
+for him moving pictures which exhibited extraordinary mechanical skill.
+One of these was the representation of a five-act opera, the scenery of
+which was automatically changed between the acts. The actors came on
+and went off, and performed their parts in pantomime. The proscenium was
+<span class="pagenum"><a name="Page_58" id="Page_58">[58]</a></span>
+about sixteen inches in breadth and thirteen in height, and the whole
+of the machinery with the scenery occupied a space only an inch and a
+quarter in depth.<a name="FNanchor_8_8" id="FNanchor_8_8"></a><a href="#Footnote_8_8" class="fnanchor">[8]</a></p>
+
+<p>The account given by Camus of a toy he constructed for this baby king
+of fifty summers is very wonderful. This elaborate automaton consisted
+of a small coach drawn by two horses and which contained the figure of
+a lady with a footman and a page behind. When this little coach was
+placed on the edge of a suitable table the coachman smacked his whip
+and the horses immediately started, moving their legs in a most natural
+manner; when they reached the opposite edge of the table they turned
+sharply at right angles and proceeded along that edge. As soon as the
+carriage arrived opposite the king it stopped and both the footman and
+page got down and opened the door, the lady alighted, and, curtseying
+to the king, presented a petition. After waiting a few minutes she bowed
+<span class="pagenum"><a name="Page_59" id="Page_59">[59]</a></span>
+again to the king and re-entered the carriage, the page got up again
+behind, the coachman whipped up his horses and drove on, and the
+footman running after the carriage jumped up into his former place. In
+the account given by M. de Camus he does not attempt to describe the
+mechanism of the machine and we have his word alone for the account of
+its performance.</p>
+
+<p>The great philosopher Descartes formed the theory that all animals
+are merely automata of a high degree of perfection, and, to prove his
+notion, he is said to have constructed an automaton in the form of
+a young girl to which he gave the name of “Ma fille Francine.” This
+figure came unhappily to a watery grave, for during a voyage by sea
+the captain of the vessel in which it was travelling had the curiosity
+to open the case in which Francine was packed and, in his astonishment
+at the movements of the automaton, which were so wonderfully natural, he
+threw the whole thing overboard, believing it to be the work of the devil.
+<span class="pagenum"><a name="Page_60" id="Page_60">[60]</a></span></p>
+
+<p>I now come to what are, if not the most extraordinary <i>pieces of
+mechanism</i>, certainly the most wonderful <i>automata</i> the world has ever
+seen. In the year 1738 that great mechanical genius M. Vaucanson, a
+member of the Académie des Sciences exhibited at Paris three very
+remarkable automata which were, a flute-player, a figure which played
+the shepherd’s pipe of Provence and the drum, and an artificial duck.
+The first of these, the flute-player, he described in a Memoir read
+before the Académie on the 30th of April, 1738. This automaton was a
+wooden figure six feet six inches in height, representing a well-known
+antique statue of a Faun, sitting on a rock and mounted on a square
+pedestal four feet six from the ground. It was capable of performing
+twelve pieces of music on a German flute, the instrument being really
+played as a man would play it by blowing across the embouchure and
+projecting the air with variable force by movable lips, which imitated
+<span class="pagenum"><a name="Page_61" id="Page_61">[61]</a></span>
+in their action those of a living player, employing a tongue to
+regulate the opening, and producing the notes by the tips of the
+fingers closing or opening the holes.</p>
+
+<p>The mechanical devices in this automaton are so beautiful and so
+scientifically thought out, that I am only sorry that time will not
+permit me to describe them in detail, but I will try and make its
+general principles clear.</p>
+
+<p>Within the pedestal was a train of wheel-work driven by a weight, which
+set into motion a small shaft on which were six cranks disposed at
+equal angular distances around it; to these six cranks as many pairs
+of bellows were attached (their inlet valves being mechanically opened
+and closed so as to make them silent in action). The air supplied by
+these bellows was conveyed to three different wind chests, one loaded
+with a weight of four pounds, one with a weight of two pounds, and
+the last having only the weight of its upper board. These wind chests
+communicated with three little chambers in the body of the figure, and
+<span class="pagenum"><a name="Page_62" id="Page_62">[62]</a></span>
+these chambers were all connected with the windpipe which passed up the
+throat to the cavity of the mouth and terminated in the two movable
+lips which, between them, formed an orifice that could be protruded or
+drawn back, and might be further modified by the action of the tongue.</p>
+
+<p>The train of wheels also set into motion a cylinder twenty inches in
+diameter and two feet six inches long; on this were fixed a number
+of brass bars of different lengths and thicknesses which in their
+revolution acted upon a row of fifteen keys or levers; three of these
+corresponded to the three little wind chambers containing air at
+different pressures, and, by means of little chains, operated their
+respective valves. There were seven levers set apart for operating the
+fingers, their respective chains making bends at the shoulders and
+elbows of the automaton, and terminated at the wrist in the ends of
+what I may call metacarpal levers attached to the fingers which were
+armed at their tips with leather to imitate the flesh of the natural hand.
+<span class="pagenum"><a name="Page_63" id="Page_63">[63]</a></span></p>
+
+<p>The motion of the mouth was controlled by four of the levers, one to
+open the lips so as to give to the wind a greater issue, one to bring
+them closer together, and so contract the passage, a third to draw the
+lips backward and away from the flute, and the fourth to push them
+forward over the edge of the embouchure.</p>
+
+<p>The last of the fifteen levers is the cleverest of all, for it has
+the power of controlling the tongue, an accomplishment which I think
+everyone (unless he be an Odd Volume) will agree with me is a very
+difficult one to acquire.</p>
+
+<p>The barrel worked upon a screwed bearing (similar to that of the
+cylinder of a phonograph), so that in its revolution all the levers
+described a spiral line sixty-four inches long, and, as the barrel
+during the performance made twelve revolutions it followed that the
+levers passed over a distance of no less than 768 inches in going
+through its performance of twelve tunes.
+<span class="pagenum"><a name="Page_64" id="Page_64">[64]</a></span></p>
+
+<p>In a Memoir read before the Académie des Sciences, M. Vaucanson
+described the very beautiful methods by which the barrel was set out,
+and by which the positions of the bars were determined on its surface
+so as to regulate the supply of air and to control the actions of the
+fingers, the motion of the lips and the movements of the tongue; and he
+gave a most interesting analysis of the acoustics of wind instruments;
+but time will not permit me to make more than this passing reference to them.</p>
+
+<p>The picture on the screen (<a href="#Fig_21">Fig. 21</a>) is a photographic
+reproduction of the plate attached to M. Vaucanson’s Memoir (a somewhat rare
+little tract published in 1738) in which his three automata are shown, and I
+hold in my hand a copy of the translation by Dr. Desaguliers, published
+in London in 1742, which, the imprint tells us, was “<i>sold at the long
+room at the Opera House in the Haymarket, where the mechanical figures
+are to be seen at 1, 2, 5, and 7 o’clock in the afternoon</i>.”</p>
+
+<div class="figcenter">
+    <a name="Fig_21" id="Fig_21"></a>
+    <img src="images/i_064.jpg" alt="_" width="500" height="688" />
+    <p class="f110"><b>Fig. 21.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_65" id="Page_65">[65]</a></span>
+The second of Vaucanson’s automata was his celebrated model of a duck,
+which he himself described in a letter to the Abbé de la Fontaine in
+1738. This extraordinary automaton (according to the inventor’s own
+account of it), exhibited a considerable amount of physiological and
+anatomical knowledge and the most profound mechanical skill, for in it
+the operation of eating, drinking, and digestion, were very closely
+imitated. The duck stretched out its neck to take corn from the
+hand, it swallowed it and discharged it in a digested condition, the
+digestion being effected not by trituration, but by dissolution, and
+(to quote the quaint expressions of the inventor), “The matter digested
+in the stomach is conducted by pipes (as in an animal by the guts),
+quite to the anus, where there is a sphincter that lets it out. I don’t
+pretend,” he says, “to give this as a perfect <i>digestion</i>, capable of
+producing blood and nutritive particles for the support of the animal.
+I hope nobody will be so unkind as to upbraid me with pretending to
+any such thing. I only pretend to imitate the mechanism of their action
+<span class="pagenum"><a name="Page_66" id="Page_66">[66]</a></span>
+in these things, <i>i.e.</i>, first, to swallow the corn; secondly, macerate
+or dissolve it; thirdly, to make it come out sensibly changed from what
+it was.” But (on the same authority), besides being furnished with a
+digestive system, the wings were anatomical imitations of nature; not
+only was every bone imitated, but all the processes and eminences of
+each bone, and the joints were articulated as in a real animal.</p>
+
+<p>After having been wound up, the duck ate and drank, played in the water
+with his bill, making what is described as a “gugling” sound, rose
+up on its legs and sat down, flapped its wings, dressed its feathers
+with its bill, and performed all these different operations without
+requiring to be touched again.</p>
+
+<p>It is important, however, to point out that this digestion story can
+only be “digested” <i>cum grano salis</i>, and this is supplied in the
+sequel which furnishes the explanation. In the year 1840 the automaton
+was found hidden away in a garret in Berlin; it was very much out of
+<span class="pagenum"><a name="Page_67" id="Page_67">[67]</a></span>
+order, and a mechanician of the name of Georges Tiets undertook to
+repair it. It was taken to Paris, and in the year 1844 was exhibited in
+the Place du Palais Royal. In the course of this exhibition one of the
+wings became deranged, and it was put into the hands of Robert-Houdin
+for repairs. Robert-Houdin took advantage of this opportunity for
+examining the so-called digestive system of the automaton, and he thus
+describes its action:</p>
+
+<p>“On présentait à l’animal un vase dans lequel était de la graine
+baignant dans l’eau. Le mouvement que faisait le bec en barbotant
+divisait la nourriture et en facilitait l’introduction dans un tuyau
+placé sous le bec inférieur du canard; l’eau et la graine, ainsi
+aspirés tombaient dans une boîte placée sous le ventre de <i>l’automate</i>,
+laquelle se vidait toutes les trois ou quatre séances. L’évacuation
+était chose préparée à l’avance; une espèce de boullie, composée de
+mie de pain colorée de vert, était poussée par un coup de pompe et
+<span class="pagenum"><a name="Page_68" id="Page_68">[68]</a></span>
+soigneusement reçue, sur un plateau en argent, comme produit d’une
+digestion artificielle,” so that, after all, this wonderful digestion
+of Vaucanson’s duck was nothing more than a clever trick.</p>
+
+<p>The third automaton of Vaucanson was a figure that played on a
+shepherd’s pipe with one hand while it beat a drum with the other. The
+instrument played upon was a little pipe with only three holes, and
+the different notes were produced by a greater or less pressure of air
+and a more or less closing of the holes, and every note, no matter how
+rapid was the succession, had to be modified by the tongue. In this
+machine there were provided as many different pressures of air as there
+were notes to be sounded, and the mechanism by which these operations
+and the fingering of the keys were effected reflects the greatest
+credit on the memory of this remarkable man.<a name="FNanchor_9_9" id="FNanchor_9_9"></a><a href="#Footnote_9_9" class="fnanchor">[9]</a></p>
+
+<p><span class="pagenum"><a name="Page_69" id="Page_69">[69]</a></span>
+The Automaton duck of Vaucanson was, to a certain extent, anticipated
+by the Comte de Gennes, Governor of the Island of Saint Christopher,
+who, we are told by Père Labat, constructed a peacock which could walk
+about and pick up grains of corn, which it swallowed and digested. I
+have no means of determining whether or not Vaucanson took the idea
+of his duck from this automaton, but that Vaucanson had imitators
+there is abundant evidence to prove. In the year 1752, Du Moulin, a
+silversmith, travelled all over Europe with automata similar to
+those of Vaucanson, and they were afterwards purchased in Nuremberg,
+by Bereis, a counsellor of Helmstadt, at whose place they were seen by
+Beckmann in 1754.</p>
+
+<p>In the year 1760, there was a writing automaton exhibited in Vienna,
+which was constructed by Friedrich von Knaus, and about the same time a
+<span class="pagenum"><a name="Page_70" id="Page_70">[70]</a></span>
+number of very curious automata were made by Le Droz, of Chaux de
+Fonds, in Neufchatel. One of these was a clock, presented to the King
+of Spain, which had, in addition to several moving figures, a sheep
+that bleated in a very natural way, and a dog mounting guard over
+a basket of fruit; if anyone attempted to touch the basket the dog
+barked and growled, and if any of the fruit were taken away the barking
+continued until it was restored.</p>
+
+<p>The son of this man (who lived at Geneva), was no less skilful a
+mechanician, for he made a gold snuffbox about 4&frac12; inches long by 3
+inches broad, in which when a spring was touched a little door flew
+open and a beautifully modelled bird of green enamelled gold rose up,
+fluttered its wings and tail, and commenced a trilling song of great
+beauty and power, its beak keeping time with the notes. Such a snuffbox
+was exhibited in the Great Exhibition of 1851, proving as great a
+popular attraction as the Koh-i-nur diamond, and (owing to the kindness
+<span class="pagenum"><a name="Page_71" id="Page_71">[71]</a></span>
+of my friend Mr. Tripplin the well-known horologist) I am now able to
+show you one of these very beautiful triumphs of mechanical skill.</p>
+
+<p>Another of the younger Le Droz’s inventions was his celebrated drawing
+automaton, which was a life-size figure of a man sitting behind a table
+and holding a style in his hand. A sheet of vellum was placed on the
+table, and the figure began to draw portraits of well-known persons
+with extraordinary correctness. This automaton was shown in London, and
+attracted considerable attention at the time.</p>
+
+<div class="figcenter">
+    <a name="Fig_22" id="Fig_22"></a>
+    <img src="images/i_072.jpg" alt="_" width="600" height="373" />
+    <p class="f110"><b>Fig. 22.</b></p>
+</div>
+
+<p>I must now re-introduce to you another old friend, first shown here by
+Brother Manning. Here he is! a little acrobat that turns somersaults
+backwards down stairs. This is not, as many have thought, an invention
+of that great mechanical genius, Robert-Houdin, for it is figured and
+described in Musschenbroeck’s “Introductio ad philosophiam naturalem,”
+which was published in Leyden in 1762 (a year after the author’s
+<span class="pagenum"><a name="Page_72" id="Page_72">[72]</a></span>
+death), and half a century before Robert-Houdin was born, and on the
+screen you have a facsimile (<a href="#Fig_22">Fig. 22</a>) of Musschenbroeck’s
+illustration of this mechanical toy, which he refers to as “an old invention
+of the Chinese.” It is also described by Ozanam in his “Recréations
+Mathématiques et Physiques,” the first edition of which was published
+in 1694. The figure I now throw on the screen (<a href="#Fig_23">Fig. 23</a>),
+is taken from the second edition of this work which was edited by Montucla in
+1790. The principle is exceedingly simple; the whole thing depends upon the
+<span class="pagenum"><a name="Page_73" id="Page_73">[73]</a></span>
+centre of gravity being suddenly changed by a shifting weight. Within a
+tube contained within the body, is a small quantity of mercury, and the
+moment that this tube is inclined to the horizon the mercury flows to
+the lower end tilting one figure over the other, and with such force
+<span class="pagenum"><a name="Page_74" id="Page_74">[74]</a></span>
+that it is carried over by its inertia far enough to tilt the tubes,
+and cause the mercury to flow to the opposite end, and the process
+is repeated as long as there are stairs to descend; by a very simple
+arrangement of strings passing over pulleys, the legs and arms are
+always brought into suitable positions to support the figure in every
+position of its descent.</p>
+
+<div class="figcenter">
+    <a name="Fig_23" id="Fig_23"></a>
+    <img src="images/i_073.jpg" alt="_" width="600" height="673" />
+    <p class="f110"><b>Fig. 23.</b></p>
+</div>
+
+<p>I now come to the automaton which for some years was the wonder of
+every country in Europe, the automaton chess-player of the Baron
+Wolfgang von Kempelen, constructed in 1776. This automaton was a
+life-size sitting figure dressed as a Turk, and having before it a
+large rectangular chest or cabinet, 3 feet 6 inches long, 2 feet deep,
+and 2 feet 6 inches high, on the top of which was a chessboard and a
+<span class="pagenum"><a name="Page_75" id="Page_75">[75]</a></span>
+set of men. The seat on which the figure sat, was attached to the
+cabinet and the whole was on castors, so that it could be wheeled
+about the floor. When the automaton was exhibited, the exhibitor began
+operations by opening the doors of the cabinet so as to show its
+contents, and here I will throw on the screen a copy (<a href="#Fig_24">Fig. 24</a>) of one
+of the plates in a curious pamphlet,<a name="FNanchor_10_10" id="FNanchor_10_10"></a><a href="#Footnote_10_10" class="fnanchor">[10]</a>
+printed anonymously in 1821, but probably by Professor Willis. It must,
+however, be recollected that these doors were opened in succession,
+and never all at the same time, but whichever door was opened, nothing
+could be seen but wheels, levers, connecting rods, strings and
+cylinders. After this the doors were closed and locked, the machinery
+was wound up, and the figure was ready to play a game of chess with any
+<span class="pagenum"><a name="Page_76" id="Page_76">[76]</a></span>
+one who would challenge him. On commencing the game the figure
+moved its head, and seemed to look at every part of the board. When
+it checked the king, it nodded its head three times, and when it
+threatened the queen, it nodded twice. It also shook its head when
+its adversary made a false move, and replaced the offending piece. It
+nearly always won the game, but occasionally lost.</p>
+
+<p>When it was completed, it was exhibited in Riga, Moscow, St.
+Petersburg, Berlin, Presburg and Vienna, coming to London in 1783, and
+having been seen by many thousands during those years with out its
+secret being discovered, but in the year 1789, a book was published
+by Mr. Freyherre of Dresden, in which he showed that “a well taught
+boy very thin and tall of his age, (sufficiently so that he could be
+concealed in a drawer below the chessboard,) agitated the whole.” In
+the plate before you, you will see that the author has shown in dotted
+lines, the position a boy might take when the left hand door was opened.
+<span class="pagenum"><a name="Page_77" id="Page_77">[77]</a></span></p>
+
+<div class="figcenter">
+    <a name="Fig_24" id="Fig_24"></a>
+    <img src="images/i_077.jpg" alt="_" width="400" height="671" />
+    <p class="f110"><b>Fig. 24.</b></p>
+</div>
+
+<p><span class="pagenum"><a name="Page_78" id="Page_78">[78]</a></span>
+The real story of this most ingenious and successful scientific fraud
+is so interesting that I must tell it here, although it puts for
+ever Baron von Kempelen’s chess-player outside the circle of true
+automata. In the year 1776, a regiment, half Russian and half Polish,
+mutinied at Riga. The mutineers were defeated, and their chief officer,
+Worouski, fell, having had both his thighs fractured by a cannon ball.
+He hid himself in a ditch until after dark, when he dragged himself
+to the neighbouring house of a doctor named Osloff, a man of great
+benevolence, who took him in and concealed him, but he had to amputate
+both his legs. During the time of Worouski’s illness, Osloff was
+visited by his intimate friend the Baron von Kempelen, and after many
+consultations and much thought, Kempelen hit upon the idea of conveying
+him out of the country by devising this automaton (as Worouski was a
+great chess-player), and in three months the figure was finished.
+<span class="pagenum"><a name="Page_79" id="Page_79">[79]</a></span></p>
+
+<p>In order to avoid suspicion he gave performances <i>en route</i> to the
+frontier. The first performance was given at Toula, on the 6th of
+November, 1777 (that is to say exactly 114 years ago to-day). The
+machine and Worouski were packed in a case and started for Prussia, but
+when they reached Riga, orders came from the Empress Katherine II.,
+for Baron von Kempelen to go to St. Petersburg with his automaton.
+The Empress played several games with him, but was always beaten, and
+then she wanted to buy the figure. This was an awkward situation for
+Kempelen, and he was at his wits’ end to know how to wriggle out of
+it. He declared that his own presence was absolutely necessary for the
+working of the machine, and that it was quite impossible for him to
+sell it, and, after some further discussion, he was allowed to proceed
+on his journey.</p>
+
+<p>This chess-player was, in the same year, purchased by Mons. Anthon, who
+took it all over Europe. At his death it came into the hands of Johann
+<span class="pagenum"><a name="Page_80" id="Page_80">[80]</a></span>
+Maelzel, the inventor of the Metronome, who sent it to the United
+States. It was afterwards sent back to Europe, and in the year 1844 was
+in the possession of a mechanician of Belleville, named Croizier.</p>
+
+<p>Maelzel himself was a mechanician of very considerable skill, and he
+constructed an automaton trumpeter, which was exhibited at Vienna
+about the year 1804, which played the Austrian and French cavalry
+marches, and marches and allegros by Weigl, Dussek, and Pleyel.
+Maelzel was, after that, appointed mechanician to the Austrian Court,
+and constructed an automatic orchestra, in which trumpets, flutes,
+clarionets, violins, violoncellos, drums, cymbals, and a triangle, were
+introduced, and this attracted very great interest in the Austrian
+capital at the time.</p>
+
+<p>In the year 1772 there was in Spring Gardens, near Charing Cross,
+a most remarkable collection of automata exhibited in a place of
+entertainment known as Cox’s Museum, and here I have an original copy
+<span class="pagenum"><a name="Page_81" id="Page_81">[81]</a></span>
+of the “<i>Descriptive catalogue, of the several superb and magnificent
+pieces of mechanism and jewellery exhibited in Mr. Cox’s Museum, at
+Spring Gardens, Charing Cross</i>.” To which this footnote is added,
+“<i>Hours of Admission, 11, 2, and 7, every day (Sundays excepted),
+tickets Half a Guinea each, admitting one person, to be had at
+Mr. Cox’s, No. 103, Shoe Lane</i>.” This was a very extraordinary
+exhibition, and contained upwards of twenty large and elaborate
+automata, several of them being adorned with gold and precious stones.
+Some were complicated clocks, some were large groups of animals, and
+figures with fountains and cascades around them. None of these objects
+was less than nine feet high, and some were as high as sixteen feet.
+I can find nothing important enough from a Mechanick’s point of view,
+to describe in detail, but it was the precursor in the same place of
+the exhibition of Monsieur Maillardet, which was one of the London
+attractions at the beginning of the present century.
+<span class="pagenum"><a name="Page_82" id="Page_82">[82]</a></span></p>
+
+<p>M. Maillardet exhibited a bird automaton (similar to that already
+referred to which was made by Le Droz), and whose performance lasted
+four minutes with one winding up. He constructed also a spider,
+entirely of steel, which imitated all the actions of the real animal,
+it ran round and round the table in a spiral line, tending towards the
+centre. Maillardet made automata representing a caterpillar, a mouse,
+a lizard, and a serpent; the last crawled about all over the table,
+darted its tongue in and out, and produced a hissing sound.</p>
+
+<p>Maillardet’s most important automata were, however, his drawing and
+writing figure, and his pianoforte player. The former was a kneeling
+boy, who wrote in ink with an ordinary pen, sentences in English and
+in French, and drew landscapes. The pianist was a figure of a lady,
+who performed eighteen pieces of music. She began by bowing to the
+audience, her bosom heaved, and her eyes first looked at the music, and
+<span class="pagenum"><a name="Page_83" id="Page_83">[83]</a></span>
+then followed the motion of her fingers, and the music was produced by
+the keys being played on by the fingers; but the most remarkable of M.
+Maillardet’s machines, was a magician, or fortune-teller, which gave
+answers to some twenty given questions, which were inscribed on as
+many counters or medallions. One of these medallions having been put
+into a drawer, the figure arose from his seat, bowed to the audience,
+and described mystic circles in the air with his wand; after appearing
+to consult his book of mysteries, he struck a little door behind him,
+which flew open, and exhibited an appropriate answer to the question on
+the medallion.</p>
+
+<p>The general principle upon which this automaton’s power of selection
+was founded lay in the fact that in the edge of each medallion there
+was a small hole drilled, but no two holes were drilled to the same
+depth, and, by an exceedingly delicate mechanism, the varying depth
+to which a pin could be thrust into the edge of a disc, was caused to
+control the mechanism by which the various answers were selected, and
+which were exhibited when the little door flew open.
+<span class="pagenum"><a name="Page_84" id="Page_84">[84]</a></span></p>
+
+<p>The next great master of automaton design and construction, was that
+wonderful genius Robert-Houdin (about whom our worthy Secretary and
+Seer discoursed to us so pleasantly and so instructively nearly a year
+ago). Brother Manning’s paper was so complete in itself, and that part
+of it which dealt with automata was so ably illustrated, that it will
+be quite unnecessary for me to add to the length of this communication,
+by going over that ground again, so I will merely enumerate the
+automata of that interesting man and pass on to still more recent times.</p>
+
+<p>The first of the automata of Robert-Houdin was a confectioner’s shop,
+in which a pastry-cook came out of the door when requested and offered
+to the spectators patisserie, bonbons, and refreshments of every
+description, and within the shop might be seen the assistants making
+pastry, rolling out the dough, and putting it into the oven. Then he
+<span class="pagenum"><a name="Page_85" id="Page_85">[85]</a></span>
+made two clowns, known as Auriol and Débureau. The first of these
+performed a number of acrobatic feats upon a chair which was held at
+arm’s length by the other. After this, the figure of Auriol smoked a
+pipe, and accompanied on the flageolet an air played by the orchestra.</p>
+
+<p>Another was an acrobat which performed tricks on the trapèze, and the
+last to which I shall refer, was his celebrated writing figure, which
+is illustrated in Brother Manning’s “Opusculum,” No. XXIV., to which I
+must refer you for a great deal of interesting information respecting
+that remarkable man.</p>
+
+<p>A contemporary of Robert-Houdin was Mons. Mareppe, who constructed a
+very wonderful automaton violin player, and which was exhibited at the
+Conservatoire at Paris, in the year 1838, and which performed on the
+violin by bowing and fingering the strings, and in an account of the
+performance which was published at the time in “Galignani’s Messenger,”
+it is stated that the musical execution was so perfect as to bring
+tears into the eyes of the audience.
+<span class="pagenum"><a name="Page_86" id="Page_86">[86]</a></span></p>
+
+<p>Coming to our own period, from the time of Robert-Houdin, there have
+been no great automata which will live in the history of the subject,
+until the year 1875, when Mr. J. N. Maskelyne (who, I am happy to
+tell you, is honouring us with his presence to-night) exhibited at
+the Egyptian Hall his marvellous “Psycho.” This was a seated figure,
+supported by a cylindrical pedestal of glass which stood upon a little
+platform, and, being on castors, could be wheeled about the floor. This
+automaton can actually play a game of whist, selecting the cards from a
+rack in front of it, and playing a most skilful game. The machine works
+apparently without any mechanical connection with anything outside,
+and the delicacy and precision of its actions, display the most
+consummate skill in design, and give to its inventor a high position
+for mechanical science. This automaton also works out arithmetical
+<span class="pagenum"><a name="Page_87" id="Page_87">[87]</a></span>
+calculations, with numbers from one to a hundred millions, showing the
+result behind a door which opens in front of its box.</p>
+
+<p>Another of Mr. Maskelyne’s automata, is the celebrated “Zoe” of 1877,
+a sitting figure supported like the last on a glass pedestal so as to
+exclude the possibility of an electrical system of communication. A
+sheet of paper is fastened on to the table in front, and the figure
+traces out very fair portraits of public characters chosen by the
+audience out of a list of some two hundred names.</p>
+
+<p>In respect to these most beautiful machines I must refrain from
+revealing to you the secrets of their working, and that for two
+reasons, first, because I do not know them myself; and second, because
+Mr. Maskelyne is here and is doubtless only impatient to jump up when I
+sit down and tell us all about them.</p>
+
+<p>I do not intend to say anything about speaking machines or to do
+more than make a passing reference to the very interesting work and
+<span class="pagenum"><a name="Page_88" id="Page_88">[88]</a></span>
+researches of Kircher in 1650, Van Helmont, 1667, Kratzenstein, in
+1780, L’Abbé Mical, in 1783, Von Kempelen in 1791, Willis in 1829,
+Wheatstone in 1837, or of Faber in 1862. All these mechanicians and
+physicists studied the philosophy of speech and produced machines or
+parts of machines, which could utter vowels, words or even sentences,
+but these machines were operated by keys and stops and were, in no
+sense of the term, automata.</p>
+
+<p>I must, however, refer to one of the greatest marvels of modern
+science, the phonograph which Mr. Edison has applied in the
+construction of his talking dolls. Edison’s talking doll is a figure,
+within which a little phonograph, driven by a little winch, is
+concealed, and which repeats in a clear voice any sentence or rhyme
+which may have been spoken against its recording cylinder or disc.
+I am deeply disappointed to be unable to show you one of these most
+interesting automata to-night, for one is on its way to me across the
+Atlantic. Colonel Gourand very kindly sent for one that I might show it
+<span class="pagenum"><a name="Page_89" id="Page_89">[89]</a></span>
+to you this evening, and I deeply regret that it has not arrived in
+time, for the Odd Volumes would, otherwise, have been the first to hear
+its voice in Europe.<a name="FNanchor_11_11" id="FNanchor_11_11"></a><a href="#Footnote_11_11" class="fnanchor">[11]</a></p>
+
+<p>In the phonograph, that splendid triumph of acoustical and mechanical
+science, we have literally fulfilled, the prediction made by Sir David
+Brewster in 1883, when he wrote “I have no doubt that before another
+century is completed, a talking and a singing Machine will be numbered
+among the conquests of Science.”</p>
+
+<p>No one who is familiar with any of the great European capitals can
+have failed to notice in the windows of the higher class of toy-shops,
+clock-work automata of various kinds. We have jugglers and rope
+dancers, conjurers, pianists, violinists, harpists and trumpeters,
+dancing niggers, figures fighting, knitting, sewing, writing, and
+<span class="pagenum"><a name="Page_90" id="Page_90">[90]</a></span>
+engaged in almost every occupation performed by human beings, but none
+that I have seen are fit for comparison with the wonderful mechanical
+works of Vaucanson, Robert-Houdin or Maskelyne; mechanically they are
+nearly identical with one another, and differ only in the external
+application of the internal machinery. At International Exhibitions one
+sees one or two of superior merit, but I have not recently seen any of
+sufficient importance to bring before you this evening. The pianists
+and other musicians merely move their hands on their instruments,
+but the music (save the mark) whether it be a violin or a trumpet,
+comes from a musical snuffbox inside which is generally wound up
+by a different key. These figures are usually very costly, and I am
+always puzzled to know who are the people who purchase them. The best
+are generally those mechanical toys which represent the movements of
+animals, and here I have a mechanical bear which is rather amusing, and
+it is ingenious because by a very simple combination of clock work with
+<span class="pagenum"><a name="Page_91" id="Page_91">[91]</a></span>
+cranks and strings a number of different motions is obtained; we have
+the mouth opening and shutting, the head going from side to side, the
+lips moving and the whole animal bowing to the spectators.</p>
+
+<p>Within the last few years a most extraordinary amount of mechanical
+ingenuity has been brought to bear upon the construction of small
+automatic toys, which are sold in the streets for a few pence, and
+I think, even more than the extraordinarily simple and ingenious
+contrivances by which the various effects are produced, the great
+inventive merit consists in a design and method of manufacture by which
+they can be turned out, with a profit, at so insignificant a cost. I
+have brought together a few examples, a very minute fraction of the
+hundreds of forms that exist, but selected merely to illustrate the
+different types of principle of action.</p>
+
+<p>A very favourite motive power is a wound up spring, consisting of
+strands of vulcanized india-rubber, and here I have one of the
+well-known butterflies which come out in Paris in 1878, where they
+<span class="pagenum"><a name="Page_92" id="Page_92">[92]</a></span>
+filled the air of the Avenue de l’Opera, the shops of which were then
+occupied chiefly by hawkers of toys. The motive power of this toy
+is nothing more than a light screw propeller or fan rotated by the
+untwisting of a spring, while on the body of the machine are two fixed
+wings or fins to prevent the whole machine from rotating. The action is
+wonderfully like that of an animal, perhaps most like that of a bat.
+Here again the same principle is applied in a running mouse, and this
+is especially interesting from the fact that the machine winds itself
+up the moment the tension of the cord is relaxed, and as the spindle of
+the wheels is the flexible rubber itself the peculiar scuttling action
+of a mouse is well imitated.</p>
+
+<p>There is again a large class of mechanical toys in which there is a
+combination of a rubber spring with a wheel and escapement, the pallets
+of which by their reciprocating motion producing whatever effect may be
+desired; the swimming fish is one of them, the wagging of the tail being
+<span class="pagenum"><a name="Page_93" id="Page_93">[93]</a></span>
+produced in the way I have described. Here is another displaying
+considerable ingenuity. In this case an escapement wheel works a crutch
+which by a pair of cranks linked together causes each of two pugilists
+to turn a little way backwards and forwards on one heel, and the arms
+being hung loosely to the shoulders by rubber hinges give to the
+figures the appearance of hitting out vigorously.</p>
+
+<p>I have here a couple of figures which I admit do not contain their
+motive power within themselves but they require so little aid from
+outside and do so much for themselves that I have been tempted to
+bring them in. Here is a monkey climbing a rope, and its progression
+is insured by the simplest possible device, the string passes over one
+pin and under another in his posterior hands while the anterior pair
+of hands grip the rope with a slight degree of friction: if the string
+be tightened the lower hands act as a lever which pushes the body up,
+but when it is slack it slips round the pins and does no work, in other
+<span class="pagenum"><a name="Page_94" id="Page_94">[94]</a></span>
+words the grip of the hands is greater than that of the feet when the
+cord is slack but less when it is tight.</p>
+
+<p>In this little animated skeleton, we have an immense effect produced by
+an extraordinarily small external motion. The squeeze that I give to
+this U shaped spring, by varying the tension of the twisted strings, on
+which the skeleton is suspended, is almost infinitesimal—but it gives to the
+skeleton considerably more energy than is usually to be found in skeletons.</p>
+
+<p>Here we have a walking figure whose action depends upon gravity, but
+his progression is checked by the friction of his feet on the board on
+which he performs, first one foot catches and then another, and each
+time his inertia turns him round, which gives him an appearance of
+having been in the company of teetotallers, or can he have been dining
+with the Sette of Odd Volumes?</p>
+
+<p>A familiar form of mechanical or automatic toys is in the form of a box
+or frame having a glass front, behind which figures of acrobats,
+<span class="pagenum"><a name="Page_95" id="Page_95">[95]</a></span>
+rope-dancers and moving groups are set into motion by sand falling on
+a wheel within the case; and it is an ingenious feature of these toys
+that they are “wound up” by simply rolling the box over on its edge
+through one revolution, which has the effect of lifting the fallen sand
+back into the upper reservoir.</p>
+
+<p>The last great class of mechanical figures, to which I shall refer,
+includes those which depend for their action upon the spinning of a top
+or fly-wheel, and some of them are particularly pretty and ingenious.</p>
+
+<p>Here, for example, is a couple of figures, which the gentleman who sold
+it to me told me was “a Narry and a Narriet walking hout on ‘Ampstead
+’Eath.” In this case the ruling spirit and go is as usual in the
+<i>lady</i>, and the man has to follow whither she leads, the legs of the
+man are connected together at the hips by a pair of cranks so disposed,
+that if one leg be pushed back, the other is thereby thrown forward. Now
+<span class="pagenum"><a name="Page_96" id="Page_96">[96]</a></span>
+the heels are so cut that they catch in the ground when in a forward
+position and can slide forward when behind; in being urged along, the
+forward leg catching in the ground is relatively pushed back and the
+other leg comes forward, which in its turn catches, and the effect of
+walking is produced.</p>
+
+<p>And here we have (<a href="#Fig_25">Fig. 25</a>) another on precisely the same
+principle, in which an ostrich appears to draw a cart, which in reality, is pushing
+him along, but the effect of the ostrich’s strut is delightfully reproduced.</p>
+
+<div class="figcenter">
+    <a name="Fig_25" id="Fig_25"></a>
+    <img src="images/i_096a.jpg" alt="_" width="600" height="501" />
+    <p class="f110"><b>Fig. 25.</b></p>
+</div>
+
+<p>Here is another in which several very curious motions are reproduced.
+This beautiful little mechanical toy (<a href="#Fig_26">Fig. 26</a>) represents
+a circus girl riding round the ring, and occasionally leaping over a bar or
+bowing to the audience, while the prancing action of the horse is ingeniously
+imitated. The motive power is derived from the spinning of a top or
+fly-wheel, supported in a frame attached to the bar to which the horse
+<span class="pagenum"><a name="Page_97" id="Page_97">[97]</a></span>
+is fixed; and, as the spindle of the top spins on the bevel edge of
+the circular base, the horse is caused to gallop round in a circle,
+and, being supported on the table by a roller mounted eccentrically
+on its axis, it prances up and down as it runs. The equestrienne is
+attached to a light lever pivotted on the rotating frame and revolving
+with it. Twice in its revolution this lever is lifted by a cam, forming
+part of the base; the first lift causes the figure to give a little
+bow, and the second, which is much greater, makes her leap over the
+bar under which the horse runs. This little machine is one of the most
+mechanically ingenious of the modern automaton toys, and it is made at
+the cost of only a few pence.</p>
+
+<div class="figcenter">
+    <a name="Fig_26" id="Fig_26"></a>
+    <img src="images/i_096b.jpg" alt="_" width="600" height="422" />
+    <p class="f110"><b>Fig. 26.</b></p>
+</div>
+
+<p>The last I shall show you is this elephant. In this little machine we
+have a fly-wheel, which with its vertical shaft looks like an umbrella
+over the Nabob who sits on the top, the vertical shaft passes into the
+body of the elephant, and there by a simple frictional gearing, rotates
+<span class="pagenum"><a name="Page_98" id="Page_98">[98]</a></span>
+a couple of cranks to which the legs are connected. The effect of
+spinning the umbrella is therefore merely to move the legs backwards
+and forwards; and, if that were all, no progression could be effected;
+but each foot rests on a little wheel or roller, which can only rotate
+in one direction so that while it catches the ground in its backward
+stroke it rolls freely over it while it is moving forward, and thus
+each leg in its turn contributes to the progressive movement of the toy.</p>
+
+<p>Now I have come to the end, and it only remains to me to thank you all
+for having supported me by your presence in such numbers to-night, and
+to say to you in the words of Othello:</p>
+
+<div class="poetry-container"><div class="poem"><div class="stanza">
+<span class="i0">“It gives me wonder great as my content,</span>
+<span class="i1 space-below2">To see you here before me.”</span>
+</div></div></div>
+
+<div class="figcenter">
+    <img src="images/deco07.jpg" alt="_" width="200" height="120" />
+</div>
+
+<hr class="chap" />
+<p><span class="pagenum"><a name="Page_99" id="Page_99">[99]</a></span></p>
+
+<div class="chapter">
+<h2>THE FOLLOWING EDITIONS OF OLD<br /> WORKS, IN ILLUSTRATION OF THE<br /> PAPER, WERE
+EXHIBITED<br /> BY THE AUTHOR.</h2></div>
+
+<p class="neg-indent">&nbsp;1. John Wilkins, (Bishop of Chester,) <i>Mathematicall Magick</i>.
+(First Edition.) Sm. 8vo. London, 1648.</p>
+
+<p class="neg-indent">&nbsp;2. —— <i>Ditto</i>. (Third Edition.) Sm. 8vo. London, 1680.</p>
+
+<p class="neg-indent">&nbsp;3. —— <i>Ditto</i>. (Fourth Edition.) Sm. 8vo. London, 1691.</p>
+
+<p class="neg-indent">&nbsp;4. Aulus Gellius, <i>Noctes Atticæ</i>. Folio. Paris, 1530.</p>
+
+<p class="neg-indent">&nbsp;5. —— <i>Ditto</i>. Sm. 8vo. Lyons, 1546.</p>
+
+<p class="neg-indent">&nbsp;6. —— <i>Ditto</i>. 12mo. (Elzevir.) Amsterdam, 1651.</p>
+
+<p class="neg-indent">&nbsp;7. Hero, of Alexandria. <i>Spiritalia</i>. (Commandinus Edition.)
+Sm. 4to. Urbino, 1575.</p>
+
+<p class="neg-indent">&nbsp;8. —— <i>Ditto</i>. (Aleotti Edition.) Sm. 4to. Ferrara, 1589.</p>
+
+<p class="neg-indent">&nbsp;9. —— <i>Ditto</i>. (Georgi Edition.) 4to. Urbino, 1592.</p>
+
+<p class="neg-indent">10. —— <i>Ditto</i>. (Aleotti Edition.) Sm. 4to. Amsterdam, 1680.</p>
+
+<p class="neg-indent">11. —— <i>De gli automati overo machine se movente</i>. Sm. 4to. Venice, 1589.</p>
+
+<p class="neg-indent">12. —— <i>Quatro theoremi aggiunti a gli artifitiosi Spiriti</i>.
+Sm. 4to. Ferrara, 1589.</p>
+
+<p class="neg-indent">13. John Bate, <i>The Mysteries of Nature and Art</i>. Sm. 4to. London, 1654.
+<span class="pagenum"><a name="Page_100" id="Page_100">[100]</a></span></p>
+
+<p class="neg-indent">14. Edward Somerset (Marquis of Worcester).
+<i>A Century of the Names and Scantlings of such Inventions, as at
+present I can call to mind</i>. 12mo. London, 1746.</p>
+
+<p class="neg-indent">15. Agostino Ramelli. <i>Le Diverse et artificiose Machine</i>. Folio.
+Paris, 1588.</p>
+
+<p class="neg-indent">16. Athanasius Kircher. <i>Magnes sive de Arte Magnetica</i>. Folio.
+Rome, 1641.</p>
+
+<p class="neg-indent">17. Vaucanson. <i>An Account of the Mechanism of Automaton or image
+playing on the German Flute</i>. 4to. London, 1742.</p>
+
+<p class="neg-indent">18. Peter van Musschenbroeck. <i>Introductio ad Philosophiam
+Naturalem</i>. 4to. Padua, 1768.</p>
+
+<p class="neg-indent">19. Jacques Ozanam. <i>Recréations Mathématiques et physiques</i>.
+8vo. Paris, 1696.</p>
+
+<p class="neg-indent">20. Anonymous, (believed to be by Thomas Powell,
+D.D.) <i>Humane Industry, or a History of most Manual Arts</i>. Sm. 8vo.
+London, 1661.</p>
+
+<p class="neg-indent">21. Anonymous, (probably Professor Willis.) <i>An
+attempt to Analyse the Automaton Chess player of Mr. de Kempelen</i>.
+8vo. London, 1821.</p>
+
+<p class="neg-indent">22. Cox’s Museum. <i>Descriptive Catalogue of the
+Superb and Magnificent pieces of Mechanism and Jewellery in Cox’s Museum</i>.
+Sm. 4to. London, 1772.</p>
+
+<p class="neg-indent">23. Henry Van Etten, <i>Mathematicall Recreations</i>. 12mo. London, 1633.</p>
+
+<div class="figcenter">
+    <p class="center">&nbsp;</p>
+    <img src="images/deco08.jpg" alt="_" width="100" height="36" />
+</div>
+
+<hr class="full" />
+<p><span class="pagenum"><a name="Page_101" id="Page_101">[101]</a></span></p>
+
+<div class="figcenter">
+    <img src="images/deco05.jpg" alt="_" width="600" height="140" />
+</div>
+
+<p class="f200"><b>O. V.</b></p>
+
+<p class="f120">A<br /><big>BIBLIOGRAPHY</big><br />OF THE<br />
+<big>PRIVATELY PRINTED OPUSCULA</big></p>
+
+<p class="f120 space-below2"><i>Issued to the Members of the Sette of Odd Volumes</i>.</p>
+
+<p class="center">“Books that can be held in the hand, and carried to the fireside, are the
+best after all.”—<i>Samuel Johnson</i>.</p>
+
+<p class="center">“The writings of the wise are the only riches our posterity cannot
+squander.”—<i>Charles Lamb</i>.</p>
+
+<p class="neg-indent">&nbsp;1. <b>B. Q.</b><br />
+A Biographical and Bibliographical Fragment. 22 Pages. Presented on
+November the 5th, 1880, by His Oddship <span class="smcap">C.&nbsp;W.&nbsp;H.&nbsp;Wyman</span>.
+1st Edition limited to 25 copies.</p>
+<p class="author">(Subsequently enlarged to 50 copies.)</p>
+
+<p class="neg-indent">&nbsp;2. <b>Glossographia Anglicana</b>.<br />
+By the late <span class="smcap">J. Trotter Brockett</span>, F.S.A.,
+London and Newcastle, author of “Glossary of North Country Words,”
+to which is prefixed a Biographical Sketch of the Author by <span
+class="smcap">Frederick Bloomer</span>. (pp. 94.) Presented on
+July the 7th, 1882, by His Oddship <span class="smcap">Bernard Quaritch</span>.</p>
+<p class="author">Edition limited to 150 copies.</p>
+
+<p><span class="pagenum"><a name="Page_102" id="Page_102">[102]</a></span></p>
+
+<p class="neg-indent">&nbsp;3. <b>Ye Boke of Ye Odd Volumes</b>,<br />
+from 1878 to 1883.&nbsp; Carefvlly <i>Compiled</i> and painsfvlly
+<i>Edited</i> by ye vnworthy Historiographer to ye Sette, <i>Brother</i> and
+<i>Vice-President</i> <span class="smcap">William Mort Thompson</span>,
+and produced by ye order and at ye charges of Hys Oddship ye
+President and Librarian of ye Sette, Bro. <span class="smcap">Bernard
+Quaritch</span>. (pp. 136.) Presented on April the 13th, 1883, by his
+Oddship <span class="smcap">Bernard Quaritch</span>.</p>
+<p class="author">Edition limited to 150 copies.</p>
+
+<p class="neg-indent">&nbsp;4. <b>Love’s Garland;</b><br />
+Or Posies for Rings, Hand-kerchers, &amp; Gloves, and such pretty
+Tokens that Lovers send their Loves. London, 1674. A Reprint. And Ye
+Garland of Ye Odd Volumes, (pp. 102.) Presented on October the 12th,
+1883, by Bro. <span class="smcap">James Roberts Brown</span>.</p>
+<p class="author">Edition limited to 250 copies.</p>
+
+<p class="neg-indent">&nbsp;5. <b>Queen Anne Musick</b>.<br />
+A brief Accompt of ye genuine Article, those who performed ye same,
+and ye Masters in ye facultie. From 1702 to 1714. (pp. 40.) Presented
+on July the 13th, 1883, by Bro. <span class="smcap">Burnham W. Horner</span>.</p>
+<p class="author">Edition limited to 100 copies.</p>
+
+<p class="neg-indent">&nbsp;6. <b>A Very Odd Dream</b>.<br />
+Related by His Oddship <span class="smcap">W. M. Thompson</span>,
+President of the Sette of Odd Volumes, at the Freemasons’ Tavern, Great
+Queen Street, on June 1st, 1883. (pp. 26.) Presented on July the 13th,
+1883, by His Oddship <span class="smcap">W. Mort Thompson</span>.</p>
+<p class="author">Edition limited to 250 copies.</p>
+
+<p class="neg-indent">&nbsp;7. <b>Codex Chiromantiae</b>.<br />
+Being a Compleate Manualle of ye Science and Arte of Expoundynge ye
+Past, ye Presente, ye Future, and ye Charactere, by ye Scrutinie of ye
+Hande, ye Gestures thereof, and ye Chirographie. <i>Codicillus I</i>.—<span
+class="smcap">Chirognomy.</span> (pp. 118.) Presented on November the
+2nd, 1883, by Bro. <span class="smcap">Ed. Heron-Allen</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">&nbsp;8. <b>Intaglio Engraving: Past and Present</b>.<br />
+An Address, by Bro. <span class="smcap">Edward Renton</span>,
+delivered at the Freemasons’ Tavern, Great Queen Street, on December
+5th, 1884. (pp. 74.) Presented to the Sette by His Oddship
+<span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 200 copies.</p>
+
+<p><span class="pagenum"><a name="Page_103" id="Page_103">[103]</a></span></p>
+
+<p class="neg-indent">&nbsp;9. <b>The Rights, Duties, Obligations, and Advantages of Hospitality</b>.<br />
+An Address by Bro. <span class="smcap">Cornelius Walford</span>, F.I.A,
+F.S.S., F.R. Hist. Soc., Barrister-at-Law, Master of the Rolls in the
+Sette of Odd Volumes, delivered at the Freemasons’ Tavern, Great Queen
+Street, on Friday, February 5th, 1885. (pp. 72.) Presented to the Sette
+by His Oddship <span class="smcap">Edward&nbsp;F.&nbsp;Wyman</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">10. <b>“Pens, Ink, and Paper:” a Discourse upon Caligraphy</b>.<br />
+The Implements and Practice of Writing, both Ancient and Modern,
+with Curiosa, and an Appendix of famous English Penmen, by Bro.
+<span class="smcap">Daniel W. Kettle</span>, F.R.G.S., Cosmographer;
+delivered at the Freemasons’ Tavern, Great Queen Street, on Friday,
+November 6th, 1885. (pp. 104.) Presented to the Sette on January 8th,
+1886, by Bro. <span class="smcap">Daniel&nbsp;W.&nbsp;Kettle</span>.</p>
+<p class="author">Edition limited to 233 copies.</p>
+
+<p class="neg-indent">11. <b>On Some of the Books for Children of the Last Century</b>.<br />
+With a few Words on the Philanthropic Publisher of St. Paul’s
+Churchyard. A paper read at a Meeting of the Sette of Odd Volumes by
+Brother <span class="smcap">Charles Welsh</span>, Chapman of the Sette,
+at the Freemasons’ Tavern, on Friday, the 8th day of January, 1886.
+(pp. 108.) Presented to the Sette by Bro. <span class="smcap">Charles Welsh</span>.</p>
+<p class="author">Edition limited to 250 copies.</p>
+
+<p class="neg-indent">12. <b>Frost Fairs on the Thames</b>.<br />
+An Address by Bro. <span class="smcap">Edward Walford</span>, M.A.,
+Rhymer to the Sette of the Odd Volumes, delivered at Willis’s Rooms,
+on Friday, December 3rd, 1886. (pp. 76.) Presented to the Sette by His
+Oddship <span class="smcap">George Clulow</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">13. <b>On Coloured Books for Children</b>.<br />
+By Bro. <span class="smcap">Charles Welsh</span>, Chapman to the Sette.
+Read before the Sette, at Willis’s Rooms, on Friday, the 6th May, 1887.
+With a Catalogue of the Books Exhibited. (pp. 60.) Presented to the
+Sette by Bro. <span class="smcap">James Roberts Brown</span>.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<p><span class="pagenum"><a name="Page_104" id="Page_104">[104]</a></span></p>
+
+<p class="neg-indent">14. <b>A Short Sketch of Liturgical History and Literature</b>.<br />
+Illustrated by Examples Manuscript and Printed. A Paper read at a
+Meeting of the Sette of Odd Volumes by Bro. <span class="smcap">Bernard
+Quaritch</span>, Librarian and First President of the Sette, at
+Willis’s Rooms, on Friday, June 10th, 1887. (pp. 86.) Presented to the
+Sette by Bro. <span class="smcap">Bernard Quaritch</span>.</p>
+
+<p class="neg-indent">15. <b>Cornelius Walford: In Memoriam</b>.<br />
+By his Kinsman, <span class="smcap">Edward Walford</span>, M.A., Rhymer
+to the Sette of Odd Volumes. Read before the Sette at Willis’s Rooms,
+on Friday, October 21st, 1887. (pp. 60.) Presented to the Sette by Bro.
+<span class="smcap">Edward Walford</span>, M.A.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<p class="neg-indent">16. <b>The Sweating Sickness</b>.<br />
+By <span class="smcap">Frederick H. Gervis</span>, M.R.C.S., Apothecary
+to the Sette of Odd Volumes, delivered at Willis’s Rooms, on Friday,
+November 4th, 1887. (pp. 48.) Presented to the Sette by Bro.
+<span class="smcap">Fred.&nbsp;H.&nbsp;Gervis</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">17. <b>New Year’s Day in Japan</b>.<br />
+By Bro. <span class="smcap">Charles Holme</span>, Pilgrim of the Sette
+of Odd Volumes. Read before the Sette at Willis’s Rooms on Friday,
+January 6th, 1888. (pp. 46.) Presented to the Sette by Bro.
+<span class="smcap">Charles Holme</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">18. <b>Ye Seconde Boke of Ye Odd Volumes</b>,<br />
+from 1883 to 1888. Carefvlly <i>Compiled</i> and painsfvlly <i>Edited</i> by ye
+vnworthy Historiographer to ye Sette, Bro. <span class="smcap">William
+Mort Thompson</span>, and produced by ye order and at ye charges of ye Sette. (pp. 157.)</p>
+<p class="author">Edition limited to 115 copies.</p>
+
+<p class="neg-indent">19. <b>Repeats and Plagiarisms in Art, 1888</b>.<br />
+By Bro. <span class="smcap">James Orrock</span>, R.I., Connoisseur to
+the Sette of Odd Volumes. Read before the Sette at Willis’s Rooms, St.
+James’s, on Friday, January 4th, 1889. (pp. 33.) Presented to the Sette
+by Bro. <span class="smcap">James Orrock</span>, R.I.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p><span class="pagenum"><a name="Page_105" id="Page_105">[105]</a></span></p>
+
+<p class="neg-indent">20. <b>How Dreams Come True</b>.<br />
+A Dramatic Sketch by Bro. <span class="smcap">J. Todhunter</span>,
+Bard of the Sette of Odd Volumes. Performed at a Conversazione of the
+Sette at the Grosvenor Gallery, on Thursday, July 17th, 1890. (pp. 46.)
+Presented to the Sette by His Oddship Bro. <span class="smcap">Charles Holme</span>.</p>
+<p class="author">Edition limited to 600 copies.</p>
+
+<p class="neg-indent">21. <b>The Drama in England during the last Three Centuries</b>.<br />
+By Bro. <span class="smcap">Walter Hamilton</span>, F.R.G.S., Parodist
+to the Sette of Odd Volumes. Read before the Sette at Limmer’s Hotel,
+on Wednesday, January 8th, 1890. (pp. 80.) Presented to the Sette by
+Bro. <span class="smcap">Walter Hamilton</span>.</p>
+<p class="author">Edition limited to 201 copies.</p>
+
+<p class="neg-indent">22. <b>Gilbert, of Colchester</b>.<br />
+By Bro. <span class="smcap">Silvanus P. Thompson</span>, D.Sc., B.A.,
+Magnetizer to the Sette of Odd Volumes. Read before the Sette at
+Limmer’s Hotel, on Friday, July 4th, 1890. (pp. 63.) Presented to the
+Sette by Bro. <span class="smcap">Silvanus P. Thompson</span>.</p>
+<p class="author">Edition limited to 249 copies.</p>
+
+<p class="neg-indent">23. <b>Neglected Frescoes in Northern Italy</b>.<br />
+By Bro. <span class="smcap">Douglas H. Gordon</span>, Remembrancer to
+the Sette of Odd Volumes. Read before the Sette at Limmer’s Hotel, on
+Friday, December 6th, 1889. (pp. 48.) Presented to the Sette by Bro.
+<span class="smcap">Douglas H. Gordon</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent">24. <b>Recollections of Robert-Houdin</b>.<br />
+By Bro. <span class="smcap">William Manning</span>. Seer to the Sette
+of Odd Volumes. Delivered at a Meeting of the Sette held at Limmer’s
+Hotel, on Friday, December 7th, 1890. (pp. 81.) Presented to the Sette
+by Bro. <span class="smcap">William Manning</span>.</p>
+<p class="author">Edition limited to 205 copies.</p>
+
+<p class="neg-indent">25. <b>Scottish Witchcraft Trials</b>.<br />
+By Bro. <span class="smcap">J. W. Brodie Innes</span>, Master of
+the Rolls to the Sette of Odd Volumes. Read before the Sette at a
+Meeting held at Limmer’s Hotel, on Friday, November 7th, 1890. (pp.66.)
+Presented to the Sette by Bro. <span class="smcap">Alderman Tyler</span>.</p>
+<p class="author">Edition limited to 245 copies.</p>
+
+<p><span class="pagenum"><a name="Page_106" id="Page_106">[106]</a></span></p>
+
+<p class="neg-indent">26. <b>Blue and White China</b>.<br />
+By Bro. <span class="smcap">Alexander T. Hollingsworth</span>,
+Artificer to the Sette of Odd Volumes. Delivered at a Meeting of the
+Sette held at Limmer’s Hotel, on Friday, February 6th, 1891. (pp. 70.)
+Presented to the Sette by Bro. <span class="smcap">Alexander T. Hollingsworth</span>.</p>
+<p class="author">Edition limited to 245 copies.</p>
+
+<p class="neg-indent">27. <b>Reading a Poem</b>.<br />
+A Forgotten Sketch by <span class="smcap">Wm. M. Thackeray</span>.
+Communicated by Bro. <span class="smcap">Chas. Plumptre Johnson</span>
+(Clerke-atte-Lawe to the Sette of Odd Volumes), to the Sette at
+Limmer’s Hotel, on Friday, May 1st, 1891. (pp. xi and 66.) Presented to
+the Sette by Bro. <span class="smcap">Chas. Plumptre Johnson</span>.</p>
+<p class="author">Edition limited to 321 copies.</p>
+
+<p class="neg-indent">28. <b>The Ballades of a Blasé Man</b>,<br />
+to which are added some Rondeaux of his Rejuvenescence, laboriously
+constructed by the Necromancer to the Sette of Odd Volumes, (pp.
+88.) Presented to the Sette by Bro. <span class="smcap">Edward
+Heron-Allen</span>, in October, 1891.</p>
+<p class="author">Edition limited to 99 copies.</p>
+
+<p class="neg-indent">29. <b>Automata Old and New</b>.<br />
+By Bro. <span class="smcap">Conrad W. Cooke</span>, Mechanick to the
+Sette of Odd Volumes. Read before the Sette at a Meeting held at
+Limmer’s Hotel, on Friday, November 6th, 1891. (pp. 118). Presented to
+the Sette by Bro. <span class="smcap">Conrad W. Cooke</span>.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<div class="chapter">
+<hr class="chap" />
+<h2><span class="smcap">Year-Bokes</span>.</h2></div>
+
+<p class="neg-indent"><b>I. The Year-Boke of the Odd Volumes: An Annual
+Record of the Transactions of the Sette. Eleventh Year, 1888-9</b>.</p>
+
+<p class="blockquot no-indent">Written and compiled by Bro. <span class="smcap">W. Mort Thompson</span>,
+Historiographer to the Sette. Issued November 29th, 1890.</p>
+
+<p class="neg-indent"><b>II. The Year-Boke of the Odd Volumes: An Annual Record
+of the Transactions of the Sette. Twelfth Year, 1889-90</b>.</p>
+
+<p><span class="pagenum"><a name="Page_107" id="Page_107">[107]</a></span></p>
+
+<p class="neg-indent"><b>III. The Year-Boke of the Odd Volumes: An Annual Record
+of the Transactions of the Sette. Thirteenth Year, 1890-1</b>.</p>
+
+<p class="blockquot no-indent">Compiled mainly from the Minute Book of the Sette,
+and imprynted for private circulation only.</p>
+<p class="blockquot author">Edition limited to 133 copies.</p>
+
+<div class="figcenter">
+    <img src="images/deco04.jpg" alt="_" width="100" height="48" />
+</div>
+
+<div class="chapter">
+<hr class="chap" />
+<h2>FOLIA.</h2></div>
+
+<p class="f110">
+<span class="smcap">Originated by Brother Holme</span>, <i>Pilgrim</i>,<br />
+<span class="smcap">who presented each Brother with a Special Portfolio</span>.</p>
+
+<p class="neg-indent"><b>1. The Victualling Crew</b>. Presented by Bro.
+<span class="smcap">Henry Moore</span>, A.R.A., <i>Ancient Mariner</i>.</p>
+
+<p class="neg-indent"><b>2. Proud Maisie</b>, from a drawing by Frederick Sandys.
+Presented by Bro. <span class="smcap">Todhunter</span>, <i>Playwright</i>.</p>
+
+<p class="neg-indent"><b>3. A Rainy Day in Hakone, Japan</b>. Presented by
+Bro. <span class="smcap">Alfred East</span>, <i>Landscape Painter</i>.</p>
+
+<p class="neg-indent"><b>4. The Shelley Memorial</b>. Photogravure from the
+original Statue. Presented by <span class="smcap">E. Onslow Ford</span>,
+A.R.A., <i>Sculptor</i>.</p>
+
+<div class="figcenter">
+    <img src="images/deco09.jpg" alt="_" width="200" height="102" />
+</div>
+
+<p class="space-above3"><span class="pagenum"><a name="Page_108" id="Page_108">[108]</a></span></p>
+
+<div class="chapter">
+<div class="figcenter">
+    <img src="images/deco10.jpg" alt="_" width="600" height="138" />
+</div>
+<h2>MISCELLANIES.</h2></div>
+
+<p class="neg-indent"><b>1. Inaugural Address</b><br />
+of His Oddship, <span class="smcap">W. M. Thompson</span>, Fourth
+President of the Sette of Odd Volumes, delivered at the Freemasons’
+Tavern, Great Queen Street, on his taking office on April 13th, &amp;c.
+(pp. 31.) Printed by order of Ye Sette, and issued on May the 4th, 1883.</p>
+<p class="author">Edition limited to 250 copies.</p>
+
+<p class="neg-indent"><b>2. Codex Chiromantiae</b>.<br />
+<i>Appendix A</i>. Dactylomancy, or Finger-ring Magic, Ancient,
+Mediæval, and Modern, (pp. 34.) Presented on October the 12th,
+1883, by Bro. <span class="smcap">Ed. Heron-Allen</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>3. A President’s Persiflage</b>.<br />
+Spoken by His Oddship <span class="smcap">W. M. Thompson</span>, Fourth President of the
+Sette of Odd Volumes, at the Freemasons’ Tavern, Great Queen
+Street, at the Fifty-eighth Meeting of the Sette, on December
+7th, 1883. (pp. 15.)</p>
+<p class="author">Edition limited to 250 copies.</p>
+
+<p class="neg-indent"><b>4. Inaugural Address</b><br />
+of His Oddship <span class="smcap">Edward F. Wyman</span>, Fifth President of the Sette of
+Odd Volumes, delivered at the Freemasons’ Tavern, Great Queen
+Street, on his taking office, on April 4th, 1884, &amp;c. (pp. 56.)
+Presented to the Sette by His Oddship <span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p><span class="pagenum"><a name="Page_109" id="Page_109">[109]</a></span></p>
+
+<p class="neg-indent"><b>5. Musical London a Century Ago</b>.<br />
+Compiled from the Raw Material, by Brother <span class="smcap">Burnham W. Horner</span>,
+F.R.S.L., F.R. Hist. S., Organist of the Sette of Odd Volumes,
+delivered at the Freemasons’ Tavern, Great Queen Street, on June
+6th, 1884. (pp. 32.) Presented to the Sette by His Oddship
+<span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>6. The Unfinished Renaissance;</b><br />
+Or, Fifty Years of English Art. By Bro. <span class="smcap">George C. Haité</span>, Author
+of “Plant Studies,” &amp;c. Delivered at the Freemasons’ Tavern,
+Friday, July 11th, 1884. (pp. 40.) Presented to the Sette by His
+Oddship <span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>7. The Pre-Shakespearian Drama</b>.<br />
+By Bro. <span class="smcap">Frank Ireson</span>. Delivered at the Freemasons’ Tavern,
+Friday, January 2nd, 1885. (pp. 34.) Presented to the Sette by
+His Oddship <span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>8. Inaugural Address</b><br />
+of His Oddship, Brother <span class="smcap">James Roberts Brown</span>, Sixth President
+of the Sette of Odd Volumes, delivered at the Freemasons’ Tavern,
+Great Queen Street, on his taking office, on April 17th, 1885,
+&amp;c. (pp. 56.) Presented to the Sette by His Oddship
+<span class="smcap">James Roberts Brown</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>9. Catalogue of Works of Art</b><br />
+Exhibited at the Freemasons’ Tavern, Great Queen Street, on
+Friday, July 11th, 1884. Lent by Members of the Sette of Odd
+Volumes. Presented to the Sette by His Oddship <span class="smcap">Edward F. Wyman</span>.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<p class="neg-indent"><b>10. Catalogue of Manuscripts and Early-Printed
+Books</b><br /> Exhibited and Described by Bro. <span class="smcap">B. Quaritch</span>,
+the Librarian of the Sette of Odd Volumes, at the
+Freemasons’ Tavern, Great Queen Street, June 5th, 1885. Presented
+to the Sette by His Oddship <span class="smcap">James Roberts Brown</span>.</p>
+
+<p class="author">Edition limited to 255 copies.</p>
+
+<p><span class="pagenum"><a name="Page_110" id="Page_110">[110]</a></span></p>
+
+<p class="neg-indent"><b>11. Catalogue of Old Organ Music</b><br />
+Exhibited by Bro. <span class="smcap">Burnham W. Horner</span>, F.R.S.L., F.R.Hist.S.,
+Organist of the Sette of Odd Volumes, at the Freemasons’ Tavern,
+Great Queen Street, on Friday, February 5th, 1886. Presented to
+the Sette by His Oddship <span class="smcap">James Roberts Brown</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>12. Inaugural Address</b><br />
+of His Oddship Bro. <span class="smcap">George Clulow</span>, Seventh President of the
+Sette of Odd Volumes, delivered at the Freemasons’ Tavern, Great
+Queen Street, on his taking office, on April 2nd, 1886, &amp;c.
+(pp. 64.) Presented to the Sette by His Oddship <span class="smcap">George Clulow</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>13. A Few Notes about Arabs</b>.<br />
+By Bro. <span class="smcap">Charles Holme</span>, Pilgrim of the Sette of Odd Volumes.
+Read at a Meeting of the “Sette” at Willis’s Rooms, on Friday,
+May 7th, 1886. (pp. 46.) Presented to the Sette of Odd Volumes
+by Bro. <span class="smcap">Chas. Holme</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>14. Account of the Great Learned Societies and Associations, and of
+the Chief Printing Clubs of Great Britain and Ireland</b><br />
+Delivered by Bro. <span class="smcap">Bernard Quaritch</span>, Librarian of the Sette of
+Odd Volumes, at Willis’s Rooms on Tuesday, June 8th, 1886.
+(pp. 66.) Presented to the Sette by His Oddship <span class="smcap">George Clulow</span>.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<p class="neg-indent"><b> 15. Report of a Conversazione</b><br />
+Given at Willis’s Rooms, King Street, St. James’s, on Tuesday,
+June 8th, 1886, by his Oddship Bro. <span class="smcap">George Clulow</span>, <i>President</i>;
+with a summary of an Address on “<span class="smcap">Learned Societies and
+Printing Clubs</span>,” then delivered by Bro. <span class="smcap">Bernard Quaritch</span>,
+<i>Librarian</i>. By Bro. <span class="smcap">W. M. Thompson</span>, <i>Historiographer</i>.
+Presented to the Sette by His Oddship <span class="smcap">George Clulow</span>.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<p class="neg-indent"><b>16. Codex Chiromantiae</b>.<br />
+<i>Appendix B</i>.—<span class="smcap">A Discourse concerning Autographs and their
+Significations</span>. Spoken in valediction at Willis’s Rooms, on
+October the 8th, 1886, by Bro. <span class="smcap">Edward Heron-Allen</span>. (pp. 45.)
+Presented to the Sette by His Oddship <span class="smcap">George Clulow</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p><span class="pagenum"><a name="Page_111" id="Page_111">[111]</a></span></p>
+
+<p class="neg-indent"><b>17. Inaugural Address</b><br />
+of His Oddship <span class="smcap">Alfred J. Davies</span>, Eighth President of the Sette
+of Odd Volumes, delivered at Willis’s Rooms, on his taking office
+on April 4th, 1887. (pp. 64.) Presented to the Sette by His
+Oddship <span class="smcap">Alfred J. Davies</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>18. Inaugural Address</b><br />
+of His Oddship Bro. <span class="smcap">T. C. Venables</span>, Ninth President of the Sette
+of Odd Volumes, delivered at Willis’s Rooms, on his taking office
+on April 6th, 1888. (pp. 54.) Presented to the Sette by His
+Oddship <span class="smcap">T. C. Venables</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>19. Ye Papyrus Roll-Scroll of Ye Sette of Odd Volumes</b>.<br />
+By Bro. <span class="smcap">J. Brodie-Innes</span>, Master of the Rolls to the Sette of Odd
+Volumes, delivered at Willis’s Rooms, May 4th, 1888. (pp. 39.)
+Presented to the Sette by His Oddship <span class="smcap">T. C. Venables</span>.</p>
+<p class="author">Edition limited to 133 copies.</p>
+
+<p class="neg-indent"><b>20. Inaugural Address</b><br />
+of His Oddship Bro. <span class="smcap">H. J. Gordon Ross</span>, Tenth President of the
+Sette of Odd Volumes, delivered at Willis’s Rooms. King Street,
+St. James’s Square, on his taking office, April 5th, 1889.</p>
+<p class="author">Edition limited to 255 copies.</p>
+
+<div class="figcenter">
+    <img src="images/deco11.jpg" alt="_" width="100" height="47" />
+</div>
+
+<p class="f150"><b>WORKS DEDICATED TO THE SETTE</b>.</p>
+
+<p class="center"><b>The Ancestry of the Violin</b>.<br />
+London, 1882. <span class="smcap">Edward Heron-Allen</span>.</p>
+
+<p class="center"><b>An Odd Volume for Smokers</b>.<br />
+London, 1889. <span class="smcap">Walter Hamilton</span>.</p>
+
+<p class="center"><b>The Blue Friars</b>.<br />
+London, 1889. <span class="smcap">W. H. K. Wright</span>.</p>
+
+<p class="center"><b>Quatrains</b>.<br />
+London, 1892. <span class="smcap">W. Wilsey Martin</span>.</p>
+
+<p><span class="pagenum"><a name="Page_112" id="Page_112">[112]</a></span></p>
+
+<div class="chapter">
+<hr class="chap" />
+<div class="figcenter">
+    <img src="images/deco12.jpg" alt="_" width="600" height="142" />
+</div>
+<h2><b><i>Ye Sette of Odd Volumes</i></b>.</h2></div>
+
+<p class="neg-indent_big"><small>Original Member.</small> 1878. <span class="smcap">Bernard Quaritch</span>,
+<i>Librarian</i>, 15, Piccadilly, W. (President, 1878, 1879, and 1882).</p>
+
+<p class="neg-indent_big"><small>Original Member.</small> 1878. <span class="smcap">Edward Renton</span>,
+<i>Herald</i>, 44, South Hill Park, Hampstead, N.W. Vice-President, 1880; Secretary, 1882).</p>
+
+<p class="neg-indent_big"><small>Original Member.</small> 1878. <span class="smcap">W. Mort Thompson</span>,
+<i>Historiographer</i>, 16, Carlyle Square, Chelsea, S.W. (Vice-President, 1882; President, 1883).</p>
+
+<p class="neg-indent_big"><small>Original Member.</small> 1878. <span class="smcap">Charles W. H. Wyman</span>,
+<i>Typographer</i>, 103, King Henry’s Road, Primrose Hill, N.W. (Vice-President, 1878 and 1879; President, 1880).</p>
+
+<p class="neg-indent_big"><small>Original Member.</small> 1878. <span class="smcap">Edward F. Wyman</span>,
+<i>Treasurer</i>, 19, Blomfield Road, Maida Vale, W.<br /> (Secretary, 1878 and 1879; President, 1884).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1878. <span class="smcap">Alfred J. Davies</span>, <i>Attorney-General</i>,
+Fairlight, Uxbridge Road, Ealing, W. (Vice-President, 1881; Secretary, 1884; President, 1887).</p>
+
+<p><span class="pagenum"><a name="Page_113" id="Page_113">[113]</a></span></p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1878. <span class="smcap">G. R. Tyler</span>,
+Alderman, late High Sheriff of the City of London, <i>Stationer</i>,
+17, Penywern Road, South Kensington, W. (Vice-President, 1886).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1879. <span class="smcap">T. C. Venables</span>,
+<i>Antiquary</i>, 9, Marlborough Place, N.W. (President, 1888).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1879. <span class="smcap">James Roberts Brown</span>,
+<i>Alchymist</i>, 44, Tregunter Road, South Kensington, W. (Secretary, 1880; Vice-President, 1883;
+President, 1885).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1880. <span class="smcap">Burnham W. Horner</span>,
+F.R.S.L., <i>Organist</i>, Matson Red House, Richmond Park, Richmond, S.W. (Vice-President, 1889).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1882. <span class="smcap">William Murrell</span>,
+M.D., <i>Leech</i> (President), 17, Welbeck Street, Cavendish Square, W. (Secretary, 1883; Vice-President, 1885).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1883. <span class="smcap">Henry George Liley</span>,
+<i>Art Director</i>, Radnor House, Radnor Place, Hyde Park, W.</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1883. <span class="smcap">George Charles Haité</span>,
+F.L.S., <i>Art Critic</i>, Ormsby Lodge, The Avenue, Bedford Park, W. (Vice-President, 1887; President, 1891).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1883. <span class="smcap">Edward Heron-Allen</span>,
+<i>Necromancer</i>, (Vice-President), 3, Northwick Terrace, N.W. (Secretary, 1885).</p>
+
+<p><span class="pagenum"><a name="Page_114" id="Page_114">[114]</a></span></p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1884. <span class="smcap">Wilfrid Ball</span>,
+R. P. E., <i>Painter-Etcher</i>, 4, Albemarle Street, W. (Master of Ceremonies, 1890; Vice-President, 1891).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1884. <span class="smcap">Daniel W. Kettle</span>,
+F.R.G.S., <i>Cosmographer</i>, Hayes Common, near Beckenham, Kent (Secretary, 1886).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1884. <span class="smcap">Charles Welsh</span>,
+<i>Chapman</i>, The Poplars, Forest Lane, Walthamstow (Vice-President, 1888).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1886. <span class="smcap">Charles Holme</span>,
+F.L.S., <i>Pilgrim</i>, The Red House, Bexley Heath, Kent (Secretary, 1887; President, 1890).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1886. <span class="smcap">Fredk. H. Gervis</span>,
+M. R.C.S., <i>Apothecary</i>, 1, Fellows Road, Haverstock Hill, N.W.</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1887. <span class="smcap">John W. Brodie-Innes</span>,
+<i>Master of the Rolls</i>, 14, Dublin Street, Edinburgh (Secretary, 1888).</p>
+
+<p class="neg-indent_big"><span class="ws6">&nbsp;</span>1887. <span class="smcap">Henry Moore</span>,
+A.R.A., <i>Ancient Mariner</i>, Collingham, Maresfield Gardens, N.W.</p>
+
+<div class="figcenter">
+    <img src="images/deco13.jpg" alt="_" width="100" height="78" />
+</div>
+
+<p class="space-above3"><span class="pagenum"><a name="Page_115" id="Page_115">[115]</a></span></p>
+
+<div class="chapter">
+<div class="figcenter">
+    <img src="images/deco14.jpg" alt="_" width="600" height="143" />
+</div>
+<h2><i>Supplemental Odd Volumes.</i></h2></div>
+
+<p class="neg-indent">1887.&emsp;<span class="smcap">James Orrock</span>, R.I., <i>Connoisseur</i>,
+48, Bedford Square, W.C.</p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">Alfred East</span>, R.I.,
+<i>Landscape Painter</i>; 14, Adamson Road, Belsize Park, N.W.</p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">Walter Hamilton</span>, <i>Parodist</i>,
+Keeper of the Archives, Ellarbee, Elms Road, Clapham Common, S.W.</p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">Douglas H. Gordon</span>, <i>Remembrancer</i>,
+(Master of Ceremonies), 41, Tedworth Square, S.W. (Secretary, 1889).</p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">Alexander T. Hollingsworth</span>, <i>Artificer</i>,
+172, Sutherland Avenue, Maida Vale, W. (Vice-President, 1890).</p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">John Lane</span>, <i>Bibliographer</i>,
+37, Southwick Street, Hyde Park, W. (Odd Councillor, 1891; Secretary, 1890;
+Master of Ceremonies, 1891).</p>
+
+<p><span class="pagenum"><a name="Page_116" id="Page_116">[116]</a></span></p>
+
+<p class="neg-indent">1888.&emsp;<span class="smcap">John Todhunter</span>, M.D.,
+<i>Playwright</i> (Secretary), Orchard Croft, The Orchard, Bedford Park, W.</p>
+
+<p class="neg-indent">1889.&emsp;<span class="smcap">Francis Elgar</span>, LL.D.,
+<i>Shipwright</i>, 113, Cannon Street, E.C.</p>
+
+<p class="neg-indent">1889.&emsp;<span class="smcap">William Manning</span>, <i>Seer</i>,
+21, Redcliffe Gardens, S.W. (Secretary, 1891; Odd Councillor).</p>
+
+<p class="neg-indent">1890.&emsp;<span class="smcap">Silvanus P. Thompson</span>,
+D.Sc., F.R.S., <i>Magnetizer</i>, Morland, Chislett Road, N.W.</p>
+
+<p class="neg-indent">1890.&emsp;<span class="smcap">Conrad W. Cooke</span>,
+<i>Mechanick</i>, The Lindens, Larkhall Rise, S.W.</p>
+
+<p class="neg-indent">1890.&emsp;<span class="smcap">E. Onslow Ford</span>, A.R.A.,
+<i>Sculptor</i>, 62, Acacia Road, N.W.</p>
+
+<p class="neg-indent">1891.&emsp;<span class="smcap">Charles Plumptre Johnson</span>,
+<i>Clerke at Law</i> (Auditor), 23, Cork Street, W.</p>
+
+<p class="neg-indent">1891.&emsp;<span class="smcap">Frederic Villiers</span>,
+<i>War Correspondent</i>, Mashrabeyah, 65, Chancery Lane, W.C.</p>
+
+<p class="neg-indent">1891.&emsp;<span class="smcap">Marcus B. Huish</span>, LL.B.,
+<i>Arts-man</i>, 21, Essex Villas, Phillimore Gardens, W.</p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">W. Wilsey Martin</span>,
+F.R.G.S., <i>Laureate</i>, 15, Delamere Terrace, W.</p>
+
+<p><span class="pagenum"><a name="Page_117" id="Page_117">[117]</a></span></p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">Herbert Ward</span>,
+<i>Wanderer</i>, Shepherd Hill House, near Rickmansworth.</p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">Frederick York Powell</span>,
+<i>Ignoramus</i>, The Corner, Priory Road, Bedford Park, W.</p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">Ernest Clarke</span>,
+<i>Yeoman</i>, 10, Addison Road, Bedford Park, W.</p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">Paul Bevan</span>,
+<i>Ready Reckoner</i>, 46, Queen’s Gate Terrace, S.W.</p>
+
+<p class="neg-indent">1892.&emsp;<span class="smcap">Max Pemberton</span>,
+<i>Hack</i>, 34, Clifton Hill, St. John’s Wood, N.W.</p>
+
+<div class="figcenter">
+    <img src="images/deco15.jpg" alt="_" width="100" height="122" />
+</div>
+
+<hr class="chap" />
+<div class="figcenter">
+    <img src="images/deco16.jpg" alt="_" width="150" height="207" />
+</div>
+
+<p class="f90 space-below3">CHISWICK PRESS:——C. WHITTINGHAM AND CO.,<br />
+TOOKS COURT, CHANCERY LANE.</p>
+
+<div class="footnotes">
+<p class="f150 u"><b>Footnotes:</b></p>
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_1_1" id="Footnote_1_1"></a><a href="#FNanchor_1_1"><span class="label">[1]</span></a>
+The “Iliad” of Homer, translated by Alexander Pope, xviii.440-444.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_2_2" id="Footnote_2_2"></a><a href="#FNanchor_2_2"><span class="label">[2]</span></a>
+“<i>Mathematicall Magick</i>, or the Wonders that may be performed by
+Mechanicall Geometry.” London, printed by <i>M. E.</i> for <i>Sa: Gellibrand</i>
+at the Brasen Serpent in <i>Paul’s</i> Churchyard, 1648 (page 173).</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_3_3" id="Footnote_3_3"></a><a href="#FNanchor_3_3"><span class="label">[3]</span></a>
+“Saturnaliorum Conviviorum,” Lib. I. cap. xxiii.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_4_4" id="Footnote_4_4"></a><a href="#FNanchor_4_4"><span class="label">[4]</span></a>
+Aulus Gellius, “Noctes Atticæ.” Lib. X. cap. xii.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_5_5" id="Footnote_5_5"></a><a href="#FNanchor_5_5"><span class="label">[5]</span></a>
+“<i>New and Rare Inventions of Water Workes</i>, shewing the easiest waies
+to raise water higher than the spring. By which invention the Perpetual
+Motion is proposed, many hard labours performed And variety of Motions
+and Sounds produced. First written in French by Isaak de Caus a late
+famous engineer; and now translated into English by John Leak. London,
+Printed by Joseph Moxon. Folio. 1659.”</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_6_6" id="Footnote_6_6"></a><a href="#FNanchor_6_6"><span class="label">[6]</span></a>
+<a href="#Page_30">See page 30</a>.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_7_7" id="Footnote_7_7"></a><a href="#FNanchor_7_7"><span class="label">[7]</span></a>
+“De Syria Dea.”</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_8_8" id="Footnote_8_8"></a><a href="#FNanchor_8_8"><span class="label">[8]</span></a>
+Mem. Acad. Sc. Paris, 1729.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_9_9" id="Footnote_9_9"></a><a href="#FNanchor_9_9"><span class="label">[9]</span></a>
+Beckmann in his “History of Inventions,” says that these automata
+found their way to St. Petersburg, and that in 1764, he himself saw
+them at the Palace of Zarsko-Selo, where he learnt that they had been
+purchased from Vaucanson, but they were not, at that time, in working order.</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_10_10" id="Footnote_10_10"></a><a href="#FNanchor_10_10"><span class="label">[10]</span></a>
+“An Attempt to Analyse the Automaton Chess Player of Mr. de Kempelen,
+with an easy method of imitating the movements of that celebrated
+figure. Illustrated by original drawings. 8vo. London. 1821.”</p></div>
+
+<div class="footnote"><p class="no-indent">
+<a name="Footnote_11_11" id="Footnote_11_11"></a><a href="#FNanchor_11_11"><span class="label">[11]</span></a>
+The author exhibited Edison’s talking doll at the Conversazione of the
+Sette of Odd Volumes which was held the following month.</p></div>
+</div>
+
+<div class="transnote bbox">
+<p class="f120 space-above1">Transcriber's Notes:</p>
+<hr class="r5" />
+<p class="indent covernote">The cover image was created by the transcriber, and is in the public domain.</p>
+<p class="indent">Uncertain or antiquated spellings or ancient words were not corrected.</p>
+<p class="indent">The illustrations have been moved so that they do not break up
+                  paragraphs and so that they are next to the text they illustrate.</p>
+<p class="indent">Errors in punctuation and inconsistent hyphenation were not corrected
+                  unless otherwise noted.</p>
+<p class="indent">Typographical errors have been silently corrected but other variations
+    in spelling and punctuation remain unaltered.</p>
+</div>
+
+
+
+
+
+
+
+
+<pre>
+
+
+
+
+
+End of Project Gutenberg's Automata Old and New, by Conrad William Cooke
+
+*** END OF THIS PROJECT GUTENBERG EBOOK AUTOMATA OLD AND NEW ***
+
+***** This file should be named 55817-h.htm or 55817-h.zip *****
+This and all associated files of various formats will be found in:
+        http://www.gutenberg.org/5/5/8/1/55817/
+
+Produced by deaurider, Paul Marshall and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by The Internet Archive)
+
+
+Updated editions will replace the previous one--the old editions will
+be renamed.
+
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg-tm electronic works to protect the PROJECT GUTENBERG-tm
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for the eBooks, unless you receive
+specific permission. If you do not charge anything for copies of this
+eBook, complying with the rules is very easy. You may use this eBook
+for nearly any purpose such as creation of derivative works, reports,
+performances and research. They may be modified and printed and given
+away--you may do practically ANYTHING in the United States with eBooks
+not protected by U.S. copyright law. Redistribution is subject to the
+trademark license, especially commercial redistribution.
+
+START: FULL LICENSE
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full
+Project Gutenberg-tm License available with this file or online at
+www.gutenberg.org/license.
+
+Section 1. General Terms of Use and Redistributing Project
+Gutenberg-tm electronic works
+
+1.A. By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg-tm electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg-tm electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the
+person or entity to whom you paid the fee as set forth in paragraph
+1.E.8.
+
+1.B. "Project Gutenberg" is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg-tm
+electronic works. See paragraph 1.E below.
+
+1.C. The Project Gutenberg Literary Archive Foundation ("the
+Foundation" or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg-tm electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg-tm mission of promoting
+free access to electronic works by freely sharing Project Gutenberg-tm
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg-tm name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg-tm License when
+you share it without charge with others.
+
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg-tm work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country outside the United States.
+
+1.E. Unless you have removed all references to Project Gutenberg:
+
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg-tm License must appear
+prominently whenever any copy of a Project Gutenberg-tm work (any work
+on which the phrase "Project Gutenberg" appears, or with which the
+phrase "Project Gutenberg" is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+
+  This eBook is for the use of anyone anywhere in the United States and
+  most other parts of the world at no cost and with almost no
+  restrictions whatsoever. You may copy it, give it away or re-use it
+  under the terms of the Project Gutenberg License included with this
+  eBook or online at www.gutenberg.org. If you are not located in the
+  United States, you'll have to check the laws of the country where you
+  are located before using this ebook.
+
+1.E.2. If an individual Project Gutenberg-tm electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase "Project
+Gutenberg" associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg-tm
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+
+1.E.3. If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg-tm License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg-tm work in a format
+other than "Plain Vanilla ASCII" or other format used in the official
+version posted on the official Project Gutenberg-tm web site
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original "Plain
+Vanilla ASCII" or other form. Any alternate format must include the
+full Project Gutenberg-tm License as specified in paragraph 1.E.1.
+
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works
+provided that
+
+* You pay a royalty fee of 20% of the gross profits you derive from
+  the use of Project Gutenberg-tm works calculated using the method
+  you already use to calculate your applicable taxes. The fee is owed
+  to the owner of the Project Gutenberg-tm trademark, but he has
+  agreed to donate royalties under this paragraph to the Project
+  Gutenberg Literary Archive Foundation. Royalty payments must be paid
+  within 60 days following each date on which you prepare (or are
+  legally required to prepare) your periodic tax returns. Royalty
+  payments should be clearly marked as such and sent to the Project
+  Gutenberg Literary Archive Foundation at the address specified in
+  Section 4, "Information about donations to the Project Gutenberg
+  Literary Archive Foundation."
+
+* You provide a full refund of any money paid by a user who notifies
+  you in writing (or by e-mail) within 30 days of receipt that s/he
+  does not agree to the terms of the full Project Gutenberg-tm
+  License. You must require such a user to return or destroy all
+  copies of the works possessed in a physical medium and discontinue
+  all use of and all access to other copies of Project Gutenberg-tm
+  works.
+
+* You provide, in accordance with paragraph 1.F.3, a full refund of
+  any money paid for a work or a replacement copy, if a defect in the
+  electronic work is discovered and reported to you within 90 days of
+  receipt of the work.
+
+* You comply with all other terms of this agreement for free
+  distribution of Project Gutenberg-tm works.
+
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg-tm electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from both the Project Gutenberg Literary Archive Foundation and The
+Project Gutenberg Trademark LLC, the owner of the Project Gutenberg-tm
+trademark. Contact the Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg-tm collection. Despite these efforts, Project Gutenberg-tm
+electronic works, and the medium on which they may be stored, may
+contain "Defects," such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg-tm
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg-tm work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg-tm work, and (c) any
+Defect you cause.
+
+Section 2. Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at
+www.gutenberg.org Section 3. Information about the Project Gutenberg
+Literary Archive Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation's EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state's laws.
+
+The Foundation's principal office is in Fairbanks, Alaska, with the
+mailing address: PO Box 750175, Fairbanks, AK 99775, but its
+volunteers and employees are scattered throughout numerous
+locations. Its business office is located at 809 North 1500 West, Salt
+Lake City, UT 84116, (801) 596-1887. Email contact links and up to
+date contact information can be found at the Foundation's web site and
+official page at www.gutenberg.org/contact
+
+For additional contact information:
+
+    Dr. Gregory B. Newby
+    Chief Executive and Director
+    gbnewby@pglaf.org
+
+Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular
+state visit www.gutenberg.org/donate
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+
+Section 5. General Information About Project Gutenberg-tm electronic works.
+
+Professor Michael S. Hart was the originator of the Project
+Gutenberg-tm concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg-tm eBooks with only a loose network of
+volunteer support.
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+
+Most people start at our Web site which has the main PG search
+facility: www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+
+
+
+</pre>
+
+</body>
+</html>
